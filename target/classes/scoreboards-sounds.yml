@@ -1,0 +1,184 @@
+# Placeholders:
+#   lobby:   {players}, {matches}, {wins}, {losses}, {server}
+#   match:   {kit}, {format}, {your_wins}, {opponent_wins}, {round}, {opponent}, {server}
+#   queue:   {tierlist}, {elo}, {range}, {waiting}, {server}
+scoreboards:
+  lobby:
+    enabled: true
+    title: "  &#D2FF00⚔ &#DEFC3BS&#E4FB59h&#E9F976u&#EFF894r&#F5F6B1a&#ECF490P&#E2F36Fv&#D9F14DP &#C6EE0B⚔  "
+    lines:
+      - ""
+      - "&#999999=&#A8A99D=&#B8B8A1=&#C7C8A5=&#D6D7A9=&#E6E7AD=&#F5F6B1=&#DCDDA6=&#C4C49B=&#ABAC90=&#939385=&#7A7A7A="
+      - ""
+      - "&f● &#FFC400IGN:"
+      - "&f● &#00FFA2Age:"
+      - "&f● &&#D570FFA&#D885FFc&#DA9AFFc&#DDAFFFo&#DF&fC4u&#E2D9FFn&#E4EEFFt:"
+      - "&f● &#FF7070ms(0)"
+      - ""
+      - "&#999999=&#A8A99D=&#B8B8A1=&#C7C8A5=&#D6D7A9=&#E6E7AD=&#F5F6B1=&#DCDDA6=&#C4C49B=&#ABAC90=&#939385=&#7A7A7A="
+      - "" 
+
+  match:
+    enabled: true
+    title: "   &#00B4FFShuraPvP   "
+    lines:
+      - ""
+      - "&7Kit: &f{kit}"
+      - "&7Format: &f{format}"
+      - ""
+      - "&aYou: &f{your_wins}"
+      - "&c{opponent}: &f{opponent_wins}"
+      - ""
+      - "&7Round: &f{round}"
+      - ""
+      - "&#00B4FF{server}"
+
+  queue:
+    enabled: true
+    title: "&#00B4FFShuraPvP"
+    lines:
+      - ""
+      - "&7Queue: &#00B4FF{tierlist}"
+      - "&7ELO: &e{elo}"
+      - "&7Range: &f±{range}"
+      - ""
+      - "&7Waiting: &f{waiting}s"
+      - ""
+      - "&#00B4FF{server}"
+
+server-name: "&#FFF800&n⛨ &#FFE329&nS&#FFD93E&nh&#FFCF53&nu&#FFC467&nr&#FFBA7C&na&#FFAF90&nP&#FFA5A5&nv&#FFB28D&nP&#FEBF76&n.&#FECC5E&nx&#FDD847&ny&#FDE52F&nz &#FCFF00&n⛨"
+
+sounds:
+  countdown-tick:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+
+  match-start:
+    sound: ENTITY_ENDER_DRAGON_GROWL
+    volume: 0.5
+    pitch: 1.5
+
+  match-win:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+
+  match-loss:
+    sound: ENTITY_WITHER_SPAWN
+    volume: 0.3
+    pitch: 1.5
+
+  round-win:
+    sound: UI_TOAST_CHALLENGE_COMPLETE
+    volume: 0.7
+    pitch: 1.2
+
+  potion-apply:
+    - sound: ENTITY_SPLASH_POTION_THROW
+      volume: 0.8
+      pitch: 1.0
+    - sound: ENTITY_SPLASH_POTION_BREAK
+      volume: 0.8
+      pitch: 1.0
+
+  queue-join:
+    sound: BLOCK_NOTE_BLOCK_BASS
+    volume: 1.0
+    pitch: 1.0
+
+  queue-leave:
+    sound: BLOCK_NOTE_BLOCK_BASS
+    volume: 1.0
+    pitch: 0.5
+
+  match-found:
+    - sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 1.0
+      pitch: 2.0
+    - sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 1.0
+      pitch: 1.8
+    - sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 1.0
+      pitch: 2.0
+
+  gui-open:
+    sound: ui.loom.take_result
+    volume: 1.0
+    pitch: 2.0
+
+  gui-click:
+    sound: minecraft:block.wooden_door.open ambient
+    volume: 2.0
+    pitch: 2.0
+
+  gui-close:
+    sound: ITEM_BOOK_PAGE_TURN
+    volume: 0.6
+    pitch: 0.8
+
+  duel-request:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+    pitch: 1.0
+
+  duel-accept:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 0.5
+    pitch: 1.5
+
+  rank-up:
+    - sound: UI_TOAST_CHALLENGE_COMPLETE
+      volume: 1.0
+      pitch: 1.0
+    - sound: ENTITY_PLAYER_LEVELUP
+      volume: 1.0
+      pitch: 1.2
+
+  rank-down:
+    sound: ENTITY_WITHER_AMBIENT
+    volume: 0.5
+    pitch: 1.0
+
+  party-invite:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.8
+    pitch: 1.2
+
+  party-create:
+    - sound: ui.loom.take_result
+      volume: 1.0
+      pitch: 1.5
+    - sound: item.goat_horn.sound.0
+      volume: 1.0
+      pitch: 1.5
+
+  error:
+    sound: ENTITY_VILLAGER_NO
+    volume: 0.8
+    pitch: 1.0
+
+  success:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+    pitch: 1.5
+
+  teleport:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 0.5
+    pitch: 1.0
+
+  maintenance-on:
+    sound: BLOCK_BEACON_DEACTIVATE
+    volume: 1.0
+    pitch: 1.0
+
+  maintenance-off:
+    sound: BLOCK_BEACON_ACTIVATE
+    volume: 1.0
+    pitch: 1.0
+
+  command-blocked:
+    sound: "minecraft:block.note_block.didgeridoo"
+    volume: 1.0
+    pitch: 0.0

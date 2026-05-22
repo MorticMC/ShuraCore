@@ -1,0 +1,209 @@
+name: ShuraCore
+version: 1.0.0
+main: dev.shura.core.ShuraCore
+api-version: '1.21'
+description: ShuraPvP Duels & Practice Core
+authors: [ PureMortic ]
+depend: [ LuckPerms ]
+
+commands:
+  duel:
+    description: Duel another player
+    usage: /duel <player>
+  duelaccept:
+    description: Accept a duel request
+    usage: /duelaccept
+  dueldeny:
+    description: Deny a duel request
+    usage: /dueldeny
+  crackedqueue:
+    description: Open cracked ranked queue
+    usage: /crackedqueue
+  premiumqueue:
+    description: Open premium ranked queue
+    usage: /premiumqueue
+  party:
+    description: Party management
+    usage: /party <create|invite|kick|disband|leave|info|accept>
+  practice:
+    description: Open FFA practice
+    usage: /practice
+  rankings:
+    description: View tierlist rankings
+    usage: /rankings
+    aliases: [tiers, rank]
+  spectate:
+    description: Spectate a match
+    usage: /spectate [player]
+    aliases: [spec]
+  shura:
+    description: ShuraCore admin commands
+    usage: /shura <arena|kit|whitelist|maintenance>
+  shuragui:
+    description: GUI editor commands
+    usage: /shuragui <create|list|edit|remove>
+  # Gamemode
+  gmc:
+    description: Gamemode creative
+    usage: /gmc [player]
+  gms:
+    description: Gamemode survival
+    usage: /gms [player]
+  gma:
+    description: Gamemode adventure
+    usage: /gma [player]
+  gmsp:
+    description: Gamemode spectator
+    usage: /gmsp [player]
+  # Utility
+  fly:
+    description: Toggle fly
+    usage: /fly [player]
+  flyspeed:
+    description: Set fly speed
+    usage: /flyspeed <0-5> [player]
+  walkspeed:
+    description: Set walk speed
+    usage: /walkspeed <0-5> [player]
+  heal:
+    description: Heal a player
+    usage: /heal [player]
+  feed:
+    description: Feed a player
+    usage: /feed [player]
+  god:
+    description: Toggle god mode
+    usage: /god [player]
+  vanish:
+    description: Toggle vanish
+    usage: /vanish [player]
+    aliases: [v]
+  invsee:
+    description: View player inventory
+    usage: /invsee <player>
+  enderchest:
+    description: View player enderchest
+    usage: /enderchest [player]
+    aliases: [ec]
+  tp:
+    description: Teleport to a player or location
+    usage: /tp <player> [target]
+  tpa:
+    description: Request teleport to player
+    usage: /tpa <player>
+  tpahere:
+    description: Request player to teleport to you
+    usage: /tpahere <player>
+  tpaccept:
+    description: Accept teleport request
+    usage: /tpaccept
+  tpdeny:
+    description: Deny teleport request
+    usage: /tpdeny
+  spawn:
+    description: Teleport to spawn
+    usage: /spawn
+  setspawn:
+    description: Set server spawn
+    usage: /setspawn
+    permission: shura.admin
+  back:
+    description: Teleport to last location
+    usage: /back
+  msg:
+    description: Send private message
+    usage: /msg <player> <message>
+  r:
+    description: Reply to last message
+    usage: /r <message>
+  broadcast:
+    description: Broadcast a message
+    usage: /broadcast <message>
+  staffchat:
+    description: Toggle staff chat
+    usage: /staffchat [message]
+    aliases: [sc]
+  maintenance:
+    description: Toggle maintenance mode
+    usage: /maintenance <on|off>
+  settings:
+    description: Open settings menu
+    usage: /settings
+  profile:
+    description: Open profile menu
+    usage: /profile
+  leavequeue:
+    description: Leave all queues
+    usage: /leavequeue
+    aliases: [lq]
+  leave:
+    description: Leave queue, duel, or spectating
+    usage: /leave
+
+permissions:
+  shura.admin:
+    description: Full admin access
+    default: op
+  shura.command.fly:
+    description: Use /fly
+    default: op
+  shura.command.flyspeed:
+    description: Use /flyspeed
+    default: op
+  shura.command.walkspeed:
+    description: Use /walkspeed
+    default: op
+  shura.command.heal:
+    description: Use /heal
+    default: op
+  shura.command.feed:
+    description: Use /feed
+    default: op
+  shura.command.god:
+    description: Use /god
+    default: op
+  shura.command.vanish:
+    description: Use /vanish
+    default: op
+  shura.command.invsee:
+    description: Use /invsee
+    default: op
+  shura.command.enderchest:
+    description: Use /enderchest
+    default: op
+  shura.command.tp:
+    description: Use /tp
+    default: op
+  shura.command.tpa:
+    description: Use /tpa
+    default: true
+  shura.command.spawn:
+    description: Use /spawn
+    default: true
+  shura.command.back:
+    description: Use /back
+    default: true
+  shura.command.msg:
+    description: Use /msg
+    default: true
+  shura.command.broadcast:
+    description: Use /broadcast
+    default: op
+  shura.command.staffchat:
+    description: Use /staffchat
+    default: op
+  shura.command.maintenance:
+    description: Use /maintenance
+    default: op
+  shura.maintenance.allow:
+    description: Bypass maintenance mode
+    default: op
+  shura.command.gamemode:
+    description: Use gamemode commands
+    default: op
+  shura.command.gamemode.others:
+    description: Change other players gamemode
+    default: op
+  shura.gui.editor:
+    description: Use GUI editor
+    default: op
