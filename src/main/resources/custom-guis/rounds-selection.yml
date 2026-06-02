@@ -1,0 +1,228 @@
+name: rounds-selection
+type: chest-6
+title: Rounds Selection
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '1':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '3':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '4':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '6':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '7':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '10':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '11':
+    material: DARK_OAK_SIGN
+    amount: 1
+    name: '&#94A400⬊ &#AEBA3FD&#B7C154r&#BFC969o&#C8D07Ep &#D9DFA8I&#E2E6BDt&#EBEDD2e&#F3F5E7m&#FCFCFCs &#E4E3CFO&#D8D6B9n &#C0BD8DD&#B5B076e&#A9A460a&#9D974At&#918A34h &#797107⬋'
+  '12':
+    material: OAK_SIGN
+    amount: 1
+    name: '&#08BC73§l💥 &#22C981K&#2FD088n&#3CD78Fo&#4ADE96c&#57E49Ck&#64EBA3b&#71F2AAa&#7EF8B1c&#8BFFB8k &#6CFAA5S&#5DF79Cy&#4DF493n&#3EF289c &#1FEC77§l💥'
+  '13':
+    material: BIRCH_SIGN
+    amount: 1
+    name: '&#A1DDC7👥 &#B8E5D4S&#C3E9DBp&#CFEDE2e&#DAF0E8c&#E5F4EFt&#F1F8F5a&#FCFCFCt&#ECF8EAo&#DBF5D7r&#CBF1C5s &#AAE9A0👥'
+  '14':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '15':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '16':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '17':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '18':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '19':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '20':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '21':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '22':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '23':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '24':
+    material: BELL
+    amount: 1
+    name: '&#D4FF00⛨ &#DBFF21S&#E3FF41e&#EAFF62n&#F1FF82d &#F5FE62D&#F8FE41u&#FCFD21e&#FFFC00l ⛨'
+  '25':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '26':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '27':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '28':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '29':
+    material: CLOCK
+    amount: 1
+    name: '&#C8FF00§l🕒 &#CEFE1BS&#D0FD29t&#D3FD36a&#D6FC44r&#D9FC52t&#DBFB5Fi&#DEFA6Dn&#E1FA7Ag &#E6F995C&#E9F8A3o&#EBF994u&#ECF985n&#EEFA77t&#F0FB68D&#F2FB59o&#F3FC4Aw&#F5FC3Bn &#F9FE1E§l🕒'
+  '30':
+    material: EXPERIENCE_BOTTLE
+    amount: 1
+    name: '&#DDFF00⚡ &#E2FF27D&#E4FE3Au&#E7FE4Er&#E9FE61a&#EBFE74b&#EEFD88i&#F0FD9Bl&#F2FDAEi&#F5FDC2t&#F7FCD5y &#FCFCFCT&#FCFBE9e&#FCFAD5x&#FDF9C2t&#FDF8AEu&#FDF79Br&#FDF688e &#FEF361P&#FEF24Ea&#FEF13Ac&#FFF027k &#FFEE00⚡'
+  '31':
+    material: END_CRYSTAL
+    amount: 1
+    name: '&#4B66FF§l🚀 &#6170FEF&#6B74FEa&#7679FEs&#817EFDt &#9687FDC&#A18CFCr&#AC91FCy&#A689FCs&#A081FDt&#9B79FDa&#9571FDl&#8F69FEs &#8459FE§l🚀'
+  '32':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '33':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '34':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '35':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '36':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '37':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '38':
+    material: HEART_POTTERY_SHERD
+    amount: 1
+    name: '&#FF0000❤ &#FD1818H&#FC2424e&#FB3030a&#FA3C3Cl&#F94747t&#F85353h &#F66B6BI&#F57777n&#F66A71d&#F75D6Ai&#F84F64c&#F9425Ea&#FB3557t&#FC2851o&#FD1A4Br &#FF003E❤'
+  '39':
+    material: BUNDLE
+    amount: 1
+    name: '&#A57D47⬆ &#B18F61P&#B8986Ei&#BEA17Bc&#C4AA88k &#D0BDA3U&#D6C6B0p &#E3D8CAB&#E9E1D7l&#EFEAE4o&#E8E1DBc&#E0D8D1k&#D9CFC8s&#D1C6BF/&#CABDB5I&#C2B3ACt&#BBAAA2e&#B3A199m&#AC9890s &#9D867D⬆'
+  '40':
+    material: STRUCTURE_BLOCK
+    amount: 1
+    name: '&#00FFEA§l🏆 &#54FEF0R&#7EFEF3o&#A8FDF6u&#D2FDF9n&#FCFCFCd&#CAECFDs &#65CCFE§l🏆'
+    lore:
+    - '&7Left Click to &e+1&7 Round,'
+    - '&7Right Click to &e-1&7 Round'
+    - '&r'
+    - '&7Current: &e1 &7Round'
+  '41':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '42':
+    material: COMPOSTER
+    amount: 1
+    name: '&#00FF26💾 &#17FF3ES&#23FF4Ba&#2EFF57v&#3AFF63e &#81FFAFT&#77FFA7e&#6CFF9Em&#62FF96p&#58FF8Dl&#4EFF85a&#43FF7Ct&#39FF73e &#25FF62💾'
+    lore:
+    - §7By Clicking on this whenever you send duel again
+    - §7Your Duel settings will be the same as it is right now!
+  '43':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '44':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '45':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '46':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '47':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '48':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '49':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '50':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '51':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '52':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '53':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''

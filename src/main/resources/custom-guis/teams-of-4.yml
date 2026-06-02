@@ -1,0 +1,63 @@
+name: teams-of-4
+type: chest-6
+title: Teams Of 4
+items:
+  '34':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '35':
+    material: LECTERN
+    amount: 1
+    name: '''&#00FF45✔ &#33FF6AS&#4DFF7De&#66FF8Fl&#80FFA2e&#99FFB5c&#B3FFC7t&#CCFFDAe&#E6FFECd &#E6FBEBG&#CCF6D7a&#B3F2C4m&#99EDB0e&#80E99Cm&#66E488o&#4DE074d&#33DB61e &#00D239✔'''
+    lore:
+    - '&#808080 No Selected Gamemode'
+    - '&#FFFFFF Right Click To Select Gamemode'
+  '4':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '38':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '39':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '40':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '41':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '42':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '13':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '49':
+    material: RED_BED
+    amount: 1
+    name: '''&#FF0000🔙 &#FC2727G&#FB3A3Ao &#F86161B&#F67474a&#F06161c&#EA4D4Dk &#DE2727🔙'''
+  '22':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '27':
+    material: STRUCTURE_VOID
+    amount: 1
+    name: '''&#C800FF🔄 &#D333FFR&#D94DFFa&#DE66FFn&#E480FFd&#E999FFo&#EFB3FFm&#F4CCFFi&#FAE6FFz&#FFFFFFe &#D9D8FFT&#C5C5FEe&#B2B1FEa&#9F9EFEm&#8C8BFEs &#6564FD🔄'''
+  '28':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '31':
+    material: HEART_OF_THE_SEA
+    amount: 1
+    name: '''&#E7FF00⏵ &#EEFF49S&#F1FF6Dt&#F5FF92a&#F8FFB6r&#FCFFDBT &#F6F9DBM&#ECF2B6a&#E3EC92t&#DAE56Dc&#D1DF49h &#BED200⏵'''

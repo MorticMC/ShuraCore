@@ -1,0 +1,82 @@
+name: id-creation
+type: chest-5
+title: ID Creation
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '1':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '3':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '4':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '6':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '7':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '17':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '18':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '22':
+    material: LECTERN
+    amount: 1
+    name: '&#FFD700§l🛒 &#FFFF00Order Your (Identification / ID)'
+    lore:
+    - '&#FFD700▟§f▙ LMB To Order Your ID'
+  '26':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '27':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '35':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '36':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '37':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '38':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '39':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '40':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '41':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '42':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '43':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '44':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1

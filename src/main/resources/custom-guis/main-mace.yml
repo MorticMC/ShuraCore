@@ -1,0 +1,29 @@
+name: main-mace
+type: hopper
+title: Mace
+items:
+  '0':
+    material: MACE
+    amount: 1
+    name: '&#9c2aca§l🔨 &#9c2acaM&#a937dca&#b544edc&#c251ffe&#b944eaP&#af37d4v&#a62abfP'
+    lore:
+    - '&#FFD700▟§f▙ LMB'
+    - '&#ff8600§l🏆 &#ff9326G&#fe9a38a&#fe9a38a&#fea14bm&#fea74ee&#feae71m&#feb484o&#febb97d&#fdc2a9e
+      &#fdcfcfO&#fdc9bcf &#febe97P&#feb884v&#feb371P&#fead5eT&#fea84bi&#fea238e&#ff9c26r&#ff9713s'
+  '2':
+    material: NETHERITE_SPEAR
+    amount: 1
+    name: '&#4a63ca🔱 &#825adaS&#9e55eap&#ba51f4e&#d64cffa&#c94af3r
+      &#bc48e7M&#b045dca&#a343d0c&#9641c4e'
+    lore:
+    - '&#FFD700▟§f▙ LMB'
+    - '&#ff0000⛨ &#ff0808G&#ff0f0fa&#ff1717m&#ff1f1fe&#ff2727m&#ff2e2eo&#ff3636d&#ff3636e
+      &#ff2e2eO&#ff2727f &#ff1f1fM&#ff1717c&#ff0f0fP&#ff0808v&#ff0000P'
+  '4':
+    material: MACE
+    amount: 1
+    name: '&#9c2aca§l🔨 &#9c2acaM&#a937dca&#b544edc&#c251ffe&#b944eaP&#af37d4v&#a62abfP'
+    lore:
+    - '&#FFD700▟§f▙ LMB'
+    - '&#4afa48§l🏆 &#6bf261G&#7bee6da&#8bea79m&#9be685e&#ace392m&#bcdf9eo&#ccdbaa&#dcd7b6e
+      &#fdcfcfO&#edd4c4f &#ccdda9M&#bbe1a4c&#abe69aT&#9bea8fi&#8aef84e&#7af379r&#69f86fs'

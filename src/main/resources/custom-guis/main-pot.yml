@@ -1,0 +1,25 @@
+name: main-pot
+type: hopper
+title: DiamondPot
+items:
+  '0':
+    material: POTION
+    amount: 1
+    name: '&#FF00E3🧪 P&#E337E9o&#C66FF0t&#AAA6F6i&#AAA6F6o&#AAA6F6n'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#FF8600§l🏆 &#FF9326G&#FE9A38a&#FEA14Bm&#FEA75Ee&#FEAE71m&#FEB484o&#FEBB97d&#FDC2A9e'' &#FDCFCFO&#FDC9BCf &#FEBE97P&#FEB884v&#FEB371P&#FEAD5ET&#FEA84Bi&#FEA238e&#FF9C26r&#FF9713s'
+  '2':
+    material: SPLASH_POTION
+    amount: 1
+    name: '&#FF00E3⚗ P&#E337E9o&#C66FF0t&#AAA6F6i&#AAA6F6o&#AAA6F6n'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#FF8600§l🏆 &#FF9326G&#FE9A38a&#FEA14Bm&#FEA75Ee&#FEAE71m&#FEB484o&#FEBB97d&#FDC2A9e'' &#FDCFCFO&#FDC9BCf &#FEBE97P&#FEB884v&#FEB371P&#FEAD5ET&#FEA84Bi&#FEA238e&#FF9C26r&#FF9713s'
+  '4':
+    material: GOLDEN_CARROT
+    amount: 1
+    name: '&#95FC1A🔥 D&#95FC1Ae&#95FC1AB&#B8FD66u&#DCFEB3f§ff'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'

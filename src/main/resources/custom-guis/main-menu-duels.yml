@@ -1,0 +1,184 @@
+name: main-menu-duels
+type: chest-5
+title: Duels Menu
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '1':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '3':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '4':
+    material: AMETHYST_CLUSTER
+    amount: 1
+    name: '&#FA484F🧪 &#FB757AC&#FC8C8Fu&#FCA2A4s&#FDB9BAt&#FDCFCFo&#FDBBC0m'' Player &#FD94A1K&#FC8092i&#FC6D82ts &#FA484F🧪'
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '6':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '7':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '10':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '11':
+    material: POPPED_CHORUS_FRUIT
+    amount: 1
+    name: '&#00BDAC⛨ &#13C4B5E&#26CABEx&#3AD1C8T&#4DD7D1i&#60DEDAe&#73E4E3r&#87EBEDs &#9AF1F6| &#ADF8FFG&#9AEFF5a&#87E5ECm&#73DCE2e&#60D2D8m&#4DC9CFo&#3ABFC5d&#26B6BBe&#13ACB2s &#00A3A8⛨'
+  '12':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '13':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '14':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '15':
+    material: CAMPFIRE
+    amount: 1
+    name: '&#03DD00⛨ &#31E32EM&#48E646c&#5FE95DT&#76EC74i&#8CF08Be&#A3F3A2r&#BAF6B9s §8| &#E8FFEAG&#D1FFD6a&#B9FFC1m&#A2FFACe&#8BFF98m&#74FF83o&#5DFF6Fd&#46FF5Ae&#2EFF45s &#00FF1C⛨'
+  '16':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '17':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '18':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '19':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '20':
+    material: BREWING_STAND
+    amount: 1
+    name: '&#47BD24⛨ &#54C43FE&#61CC5Bx&#6DD376t&#7ADB92r&#87E2ADa &#94E9C8| &#A0F1E4G&#ADF8FFa&#9DEEE7m&#8CE4CEe&#7CDAB6m&#6CD09Do&#5BC685d&#4BBC6Ce&#3AB254s &#2AA83B⛨'
+  '21':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '22':
+    material: NETHERITE_INGOT
+    amount: 1
+    name: '&#BD0303⛨ &#C50303M&#CE0202c&#D60202P&#DE0202v&#E60101P §8| &#F70000G&#FF0000a&#F40000m&#E90000e&#DE0000m&#D40000o&#C90000d&#BE0000e&#B30000s &#A80000⛨'
+  '23':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '24':
+    material: SOUL_LANTERN
+    amount: 1
+    name: '&#00DDCB⛨ &#2BE3D4S&#40E6D8u&#55E8DCb&#6AEBE1T&#80EEE5i&#95F1E9e&#AAF4EEr&#BFF7F2s §8| &#E8FFFDG&#D1FFFBa&#B9FFF9m&#A2FFF7e&#8BFFF5m&#74FFF4o&#5DFFF2d&#46FFF0e&#2EFFEEs &#00FFEA⛨'
+  '25':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '26':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '27':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '28':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '29':
+    material: SHULKER_SHELL
+    amount: 1
+    name: '&#0269BD⛨ &#1377C4N&#2486CAo&#3594D1v&#46A2D7a&#58B1DET&#69BFE5i&#7ACDEBe&#8BDBF2r&#9CEAF8s &#ADF8FF| &#9CE7F6G&#8AD7EEa&#79C6E5m&#68B6DCe&#57A5D4m&#4594CBo&#3484C2d&#2373B9e&#1163B1s &#0052A8⛨'
+  '30':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '31':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '32':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '33':
+    material: SOUL_CAMPFIRE
+    amount: 1
+    name: '&#DD8600⛨ &#E39A2BP&#E6A440v&#E8AE55P&#EBB86AT&#EEC380i&#F1CD95e&#F4D7AAr&#F7E1BFs §8| &#FFF5E8G&#FFEBD1a&#FFE1B9m&#FFD7A2e&#FFCD8Bm&#FFC374o&#FFB95Dd&#FFAF46e&#FFA52Es &#FF9100⛨'
+  '34':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '35':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '36':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '37':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '38':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '39':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '40':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '41':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '42':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '43':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '44':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''

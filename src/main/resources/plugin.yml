@@ -1,0 +1,84 @@
+name: ShuraCore
+version: 1.0.0
+main: dev.shura.core.ShuraCore
+api-version: '1.21'
+description: ShuraPvP Duels & Practice Core
+authors: [ PureMortic ]
+depend: [ LuckPerms ]
+
+commands:
+  duel:
+    description: Duel another player
+    usage: /duel <player>
+  duelaccept:
+    description: Accept a duel request
+    usage: /duelaccept
+  dueldeny:
+    description: Deny a duel request
+    usage: /dueldeny
+  crackedqueue:
+    description: Open cracked ranked queue
+    usage: /crackedqueue
+  premiumqueue:
+    description: Open premium ranked queue
+    usage: /premiumqueue
+  party:
+    description: Party management
+    usage: /party <create|invite|kick|disband|leave|info|accept>
+  practice:
+    description: Open FFA practice
+    usage: /practice
+  rankings:
+    description: View tierlist rankings
+    usage: /rankings
+    aliases: [ ranked ]
+  shura:
+    description: ShuraCore admin commands
+    usage: /shura <arena|kit|reload>
+  shuragui:
+    description: GUI editor commands
+    usage: /shuragui <create|list|edit|remove>
+  fly:
+    description: Toggle fly
+    usage: /fly [player]
+  flyspeed:
+    description: Set fly speed
+    usage: /flyspeed <0-5> [player]
+  leave:
+    description: Leave queue, duel, or spectating
+    usage: /leave
+  setspawn:
+    description: Set spawn location
+    usage: /setspawn
+  spawn:
+    description: Teleport to spawn
+    usage: /spawn
+  profile:
+    description: View your profile
+    usage: /profile
+  settings:
+    description: Open settings
+    usage: /settings
+  kiteditor:
+    description: Open kit editor menu
+    usage: /kiteditor
+  id:
+    description: ID system commands
+    usage: /id [order]
+  setidroom:
+    description: Set ID creation room location
+    usage: /setidroom
+
+permissions:
+  shura.admin:
+    description: Full admin access
+    default: op
+  shura.command.fly:
+    description: Use /fly
+    default: op
+  shura.command.flyspeed:
+    description: Use /flyspeed
+    default: op
+  shura.gui.editor:
+    description: Use GUI editor
+    default: op

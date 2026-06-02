@@ -1,0 +1,189 @@
+name: subtiers-queue
+type: chest-5
+title: SubTiers Queue
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '1':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '3':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '4':
+    material: RED_BED
+    amount: 1
+    name: §c§l🛏 §cBed
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '6':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '7':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '10':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '11':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '12':
+    material: GOLDEN_APPLE
+    amount: 1
+    name: '&#C8FF00§l🍏 &#DAEF45O&#E3E768G &#F4D7ADV&#FDCFCFa&#FDD7ADn&#FDDF8Ai&#FDE768l&#FCEF45l&#FCF723a'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '13':
+    material: CHORUS_FRUIT
+    amount: 1
+    name: '''&#BCBCF5§l🍏 &#CFC1EAD&#D8C4E5i&#E1C7DFa&#EACADAm&#F4CCD4o&#FDCFCFn&#EEC8D5d'' &#D1B9E2S&#C2B1E8M&#B3AAEFP'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '14':
+    material: END_CRYSTAL
+    amount: 1
+    name: '''&#BCBCF5§l💎 &#CAC0EDD&#D2C2E8i&#D9C4E4a&#E0C7E0m&#E7C9DCo&#EFCBD7n&#F6CDD3d'' &#F2C9D4V&#E7C4D9a&#DCBEDDn&#D1B9E2i&#C5B3E7l&#BAADECl&#AFA8F0a'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '15':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '16':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '17':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '18':
+    material: SOUL_LANTERN
+    amount: 1
+    name: '''&#00DDCB⛨ &#2BE3D4S&#40E6D8u&#55E8DCb&#6AEBE1T&#80EEE5i&#95F1E9e&#AAF4EEr&#BFF7F2s'' §8| &#E8FFFDG&#D1FFFBa&#B9FFF9m&#A2FFF7e&#8BFFF5m&#74FFF4o&#5DFFF2d&#46FFF0e&#2EFFEEs &#00FFEA⛨'
+  '19':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '20':
+    material: ELYTRA
+    amount: 1
+    name: '&#D200FF✈ &#C24FFCE&#B976FAl&#B19DF8y&#B19DF8t&#B19DF8r&#B19DF8a'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '21':
+    material: COMPASS
+    amount: 1
+    name: '&#AAB1AC🏹 &#B3CEB1M&#B8DDB3a&#BCEBB6n&#C1FAB8h&#C1FAB8u&#C1FAB8n&#C1FAB8t'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '22':
+    material: CREEPER_SPAWN_EGG
+    amount: 1
+    name: '&#00FF45👾 &#4DFD73C&#74FC8Ar&#9AFBA1e&#C1FAB8e&#C1FAB8p&#C1FAB8e&#C1FAB8r'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '23':
+    material: SPLASH_POTION
+    amount: 1
+    name: '&#C7B6FA⚗ &#DACEFCS&#E3DBFDp&#ECE7FDe&#F6F3FEe§fd'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '24':
+    material: GOLDEN_CARROT
+    amount: 1
+    name: '&#95FC1A🔥 D&#95FC1Ae&#95FC1AB&#B8FD66u&#DCFEB3f§ff'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '25':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '26':
+    material: RED_BED
+    amount: 1
+    name: '''&#FF0000🔙 &#FC2727G&#FB3A3Ao &#F86161B&#F67474a&#F06161c&#EA4D4Dk'' &#DE2727🔙'
+  '27':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '28':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '29':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '30':
+    material: BOW
+    amount: 1
+    name: §2🏹 Bow
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '31':
+    material: TRIDENT
+    amount: 1
+    name: §b🔱 Trident
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '32':
+    material: TNT_MINECART
+    amount: 1
+    name: '&#F60606§l💣 &#F52727T&#F43737n&#F34747T &#F26868M&#F17878i&#F2696En&#F25A64e&#F34B5Ac&#F33B51a&#F42C47r&#F41D3Dt'
+    lore:
+    - §6▟§f▙ LMB
+    - '''&#BCC0FA§l🏆 &#C7CBFBG&#CDD0FBa&#D2D5FCm&#D8DAFCe&#DEE0FDm&#E3E5FDo&#E9EAFDd&#EEEFFEe&#F4F5FEs'' §fO&#FAF7FFf &#EFE6FES&#EADEFEu&#E5D6FEb&#E0CDFET&#DBC5FEi&#D6BDFEe&#D0B5FDr&#CBACFDs'
+  '33':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '34':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+  '35':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '36':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '37':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '38':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '39':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '40':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '41':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '42':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '43':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '44':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1

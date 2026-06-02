@@ -1,0 +1,135 @@
+scoreboards:
+  lobby:
+    enabled: true
+    title: "  &#FDC001&lP&#FDBE01&lR&#FDBC01&lA&#FEBA01&lC&#FEB802&lT&#FEB502&lI&#FFB302&lC&#FFB102&lE  "
+    lines:
+      - ""
+      - "&7&m                   "
+      - ""
+      - "&f● &#FFC400IGN:"
+      - "&f● &#00FFA2Age:"
+      - "&f● &&#D570FFA&#D885FFc&#DA9AFFc&#DDAFFFo&#DF&fC4u&#E2D9FFn&#E4EEFFt:"
+      - "&f● &#FF7070ms(0)"
+      - ""
+      - "&7&m                    "
+      - "&8{server}"
+
+  match:
+    enabled: true
+    title: "   &#00B4FFShuraPvP   "
+    lines:
+      - ""
+      - "&7Kit: &f{kit}"
+      - "&7Format: &f{format}"
+      - ""
+      - "&aYou: &f{your_wins}"
+      - "&c{opponent}: &f{opponent_wins}"
+      - ""
+      - "&7Round: &f{round}"
+      - ""
+      - "&#00B4FF{server}"
+
+  queue:
+    enabled: true
+    title: "&#00B4FFShuraPvP"
+    lines:
+      - ""
+      - "&7Queue: &#00B4FF{tierlist}"
+      - "&7ELO: &e{elo}"
+      - "&7Range: &f±{range}"
+      - ""
+      - "&7Waiting: &f{waiting}s"
+      - ""
+      - "&#00B4FF{server}"
+
+server-name: "shurapvp.xyz"
+
+sounds:
+  countdown-tick:
+    sound: minecraft:block.note_block.hat ambient
+    volume: 2.0
+    pitch: 0.6
+
+  countdown-tick-alt:
+    sound: minecraft:block.note_block.iron_xylophone ambient
+    volume: 2.0
+    pitch: 1.4
+
+  countdown-final:
+    sound: minecraft:block.note_block.flute ambient
+    volume: 2.0
+    pitch: 0.0
+
+
+  round-win:
+    title: "&#FBFBFB🏆&#F8FBE0🏆&#F5FBC5🏆&#F6FB98🏆&#F6FB98🏆&#F6FB98🏆&#F6FB98🏆&#DFFB00🏆"
+    sounds:
+      - sound: minecraft:entity.wind_charge.wind_burst ambient
+        volume: 1.0
+        pitch: 0.0
+      - sound: minecraft:item.firecharge.use ambient
+        volume: 1.0
+        pitch: 0.0
+
+  round-loss:
+    title: "&#FBFBFB☠&#FBD2D2☠&#FBA0A0☠&#FB8080☠&#FB6161☠&#FB5B4B☠&#FB312A☠&#FB1414☠&#FB0000☠"
+    sounds:
+      - sound: BLOCK_BEACON_DEACTIVATE
+        volume: 1.0
+        pitch: 1.0
+      - sound: ENTITY_WITHER_SKELETON_DEATH
+        volume: 1.0
+        pitch: 1.0
+
+  gui-open:
+    sound: ui.loom.take_result
+    volume: 1.0
+    pitch: 2.0
+
+  gui-click:
+    sound: minecraft:block.wooden_door.open ambient
+    volume: 2.0
+    pitch: 2.0
+
+  gui-close:
+    sound: ITEM_BOOK_PAGE_TURN
+    volume: 0.6
+    pitch: 0.8
+
+  duel-accept:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 0.5
+    pitch: 1.5
+
+  party-invite:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.8
+    pitch: 1.2
+
+  party-create:
+    - sound: ui.loom.take_result
+      volume: 1.0
+      pitch: 1.5
+    - sound: item.goat_horn.sound.0
+      volume: 1.0
+      pitch: 1.5
+
+  error:
+    sound: ENTITY_VILLAGER_NO
+    volume: 0.8
+    pitch: 1.0
+
+  success:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+    pitch: 1.5
+
+  command-blocked:
+    sound: "minecraft:block.note_block.didgeridoo"
+    volume: 1.0
+    pitch: 0.0
+
+  round-change:
+    sound: minecraft:block.note_block.bell ambient
+    volume: 1.5
+    pitch: 1.8

@@ -1,0 +1,187 @@
+name: id-player
+type: chest-6
+title: Player ID
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '1':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '3':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '4':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '6':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '7':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '10':
+    material: GLASS_PANE
+    amount: 1
+  '11':
+    material: GLASS_PANE
+    amount: 1
+  '12':
+    material: GLASS_PANE
+    amount: 1
+  '13':
+    material: GLASS_PANE
+    amount: 1
+  '14':
+    material: GLASS_PANE
+    amount: 1
+  '15':
+    material: GLASS_PANE
+    amount: 1
+  '16':
+    material: GLASS_PANE
+    amount: 1
+  '17':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '18':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '19':
+    material: ARMOR_STAND
+    amount: 1
+    name: '&#fff000♂/♀ &#FFFF00Gender §8| §fMale'
+  '20':
+    material: GLASS_PANE
+    amount: 1
+  '21':
+    material: DARK_OAK_HANGING_SIGN
+    amount: 1
+    name: '&#fff000👥 &#FFFF00Alts'
+    lore:
+    - '&#ff0000Suspended §8| §7Offline §8| §aOnline'
+    - '&#5c5c5c=&#6b6b6b=&#7a7a7a=&#888888=&#979797=&#a6a6a6=&#b5b5b5=&#c4c4c4=&#d3d3d3=&#e1e1e1=&#f0f0f0=§f=&#f1f1f1=&#e4e4e4=&#d6d6d6=&#c8c8c8=&#bababa=&#adadad=&#9f9f9f=&#919191=&#838383=&#767676=&#686868='
+    - §7nubhackerl7
+    - '&#ff0000Ezkidfku'
+    - §7nukffflll
+    - §aMalwarine
+  '22':
+    material: MANGROVE_HANGING_SIGN
+    amount: 1
+    name: '&#fff000§l❕ &#FFFF00Warnings Count §8| §f0'
+  '23':
+    material: SPRUCE_HANGING_SIGN
+    amount: 1
+    name: '&#fff000§l🔇 &#FFFF00Mute Count §8| &#FFFF000'
+  '24':
+    material: JUNGLE_HANGING_SIGN
+    amount: 1
+    name: '&#fff000⚠ &#FFFF00Ban Count §8| §f0'
+  '25':
+    material: OAK_HANGING_SIGN
+    amount: 1
+    name: '&#fff000◎ &#FFFF00Joined The Server At §8| §f27 May 2026'
+  '26':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '27':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '28':
+    material: GLASS_PANE
+    amount: 1
+  '29':
+    material: GLASS_PANE
+    amount: 1
+  '30':
+    material: GLASS_PANE
+    amount: 1
+  '31':
+    material: DAMAGED_ANVIL
+    amount: 1
+    name: '&#fff000⌚ &#FFFF00Expiry Date§8 | §f20 May 2028'
+  '32':
+    material: DRAGON_BREATH
+    amount: 1
+    name: '&#fff000👤 &#FFFF00Discord Username §8| §fmalwarine'
+  '33':
+    material: IRON_HORSE_ARMOR
+    amount: 1
+    name: '&#fff000🪓 &#FFFF00Combat Log Count §8| §f0'
+  '34':
+    data: rO0ABXcEAAAAAXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABnQAAj09dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAKY29tcG9uZW50c3QADnNjaGVtYV92ZXJzaW9udXEAfgAGAAAABnQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1TdGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAABI/dAAVbWluZWNyYWZ0OnBsYXllcl9oZWFkc3EAfgAQAAAAAXNyABdqYXZhLnV0aWwuTGlua2VkSGFzaE1hcDTATlwQbMD7AgABWgALYWNjZXNzT3JkZXJ4cgARamF2YS51dGlsLkhhc2hNYXAFB9rBwxZg0QMAAkYACmxvYWRGYWN0b3JJAAl0aHJlc2hvbGR4cD9AAAAAAAAMdwgAAAAQAAAAAnQAFW1pbmVjcmFmdDpjdXN0b21fbmFtZXQBH3tleHRyYTpbe2JvbGQ6MGIsY29sb3I6IiNGRkYwMDAiLGl0YWxpYzowYixvYmZ1c2NhdGVkOjBiLHN0cmlrZXRocm91Z2g6MGIsdGV4dDoi4pi7ICIsdW5kZXJsaW5lZDowYn0se2JvbGQ6MGIsY29sb3I6InllbGxvdyIsaXRhbGljOjBiLG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiJGcmllbmRzIENvdW50ICIsdW5kZXJsaW5lZDowYn0se2NvbG9yOiJkYXJrX2dyYXkiLGl0YWxpYzowYix0ZXh0OiJ8ICJ9LHtjb2xvcjoid2hpdGUiLGl0YWxpYzowYix0ZXh0OiIwIn1dLHRleHQ6IiJ9dAAVbWluZWNyYWZ0OmN1c3RvbV9kYXRhdABQe1B1YmxpY0J1a2tpdFZhbHVlczp7InNodXJhY29yZTptZi1ndWkiOiI3OGFjMWJiYi0yZTRkLTQ4NzMtODQ3Ny02NGNlNjNiOGRhYWQifX14AHEAfgAU
+  '35':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '36':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '37':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '38':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '39':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '40':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '41':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '42':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '43':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '44':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '45':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '46':
+    data: rO0ABXcEAAAAAXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABnQAAj09dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAKY29tcG9uZW50c3QADnNjaGVtYV92ZXJzaW9udXEAfgAGAAAABnQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1TdGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAABI/dAAVbWluZWNyYWZ0OnBsYXllcl9oZWFkc3EAfgAQAAAAAXNyABdqYXZhLnV0aWwuTGlua2VkSGFzaE1hcDTATlwQbMD7AgABWgALYWNjZXNzT3JkZXJ4cgARamF2YS51dGlsLkhhc2hNYXAFB9rBwxZg0QMAAkYACmxvYWRGYWN0b3JJAAl0aHJlc2hvbGR4cD9AAAAAAAAMdwgAAAAQAAAABHQAEW1pbmVjcmFmdDpwcm9maWxldAXGe2lkOltJOy02MzExODI4ODAsLTEzMjE5NzEzLC0xNzA0Nzg5NTQ0LC0yMjA3ODkyNDJdLG5hbWU6IlJhcHB5Qm9zcyIscHJvcGVydGllczpbe25hbWU6InRleHR1cmVzIixzaWduYXR1cmU6IlhwOVVOQ2kyUW9ORkFnK282RlIxT1lPNWxTbmlSdFV6bkl2WHlHT1BQc0p5bEk0UGY1NUo2ZXd3R05hQkhlMGVGMENPb0NRSmoycTB0cXNJVzZYeFUwa2NpUVJibjZtY2YyVTBJN1Z3aHhkSXY5eGNTbS9CdlhodnNVU1AyeFl6K003U3kzRnFHZFZLYlQwaDdyMlpXRjNLc2NBMXNzRVQ2UU5RUDFkY0sxVis5amtXdUY4Q3M0NE9ER1lIS3hpNUtNcFo5MUdpSDA2OEloLzBMclRKZEhTNDZXV1B2cVpQNzNsRjdqZEh2MmpieUR2bk14dnB6R3hSR3MyOURGN3lwN2h4azBRbmRtNTk0K0YvUWQ3dkp5cVM1ekNRd1FVbXZiMnhaNG5PQnJlb0lqVWJqM1BFM2tac1Y5OU9SYTJ5NnBpMTRETnZwakl6Ni9CVXBnWHJSTEN1UzA2empqTXVlVWpRUEdGR1lKSC9FWDFIbVI3ZnlDOGF4S0I5QjBBZzgvd3k1MjNTMzU5RGtXR3RRcTA2WWZxR2MvMEcyN0VzWC9pWHFKUllEamFScjVmVFNCa2E0TGxkaTlpWlUvdE53NHIxc2c4VUx1WDVkVEtuMWxMRkl0VnJJQmV2V2ZwbkNPZjNiVUMxdU1ZSmRsS25LVjNubUxrMEc3SkJPMVdlTXVSR1VZTEhVL1ZIYit5MEpVL0cya0EvcHA2dmx4NTcrMDJtM1ZrbUxYcDRvY0U4UndZeVJHV241MW93amdIZ3FmZ0FWTm4yeEViNVYvNDFXNVRiakx5c0ZQUDB4dTlGb3A5YUNTQkE1VXV2ODZYZ0djQVZweStuK3VIQmw5d2ppNWV3Yll1VFpzUWlpa1ZHUmRpdndLL2RnZkIybVdab25nemFHTVYxeU9FPSIsdmFsdWU6ImV3b2dJQ0owYVcxbGMzUmhiWEFpSURvZ01UYzFNelkxTURjMk5ETTRNeXdLSUNBaWNISnZabWxzWlVsa0lpQTZJQ0prWVRZd1pUbGxNR1ptTXpZME9EZG1PV0UyTW1ZNVpEaG1NbVEzTURZd05pSXNDaUFnSW5CeWIyWnBiR1ZPWVcxbElpQTZJQ0pTWVhCd2VVSnZjM01pTEFvZ0lDSnphV2R1WVhSMWNtVlNaWEYxYVhKbFpDSWdPaUIwY25WbExBb2dJQ0owWlhoMGRYSmxjeUlnT2lCN0NpQWdJQ0FpVTB0SlRpSWdPaUI3Q2lBZ0lDQWdJQ0oxY213aUlEb2dJbWgwZEhBNkx5OTBaWGgwZFhKbGN5NXRhVzVsWTNKaFpuUXVibVYwTDNSbGVIUjFjbVV2TW1Vek16QmtPVGMxTVRSbE16VXpOVEE0TkRJd05XVmlaRGRtT1ROa04yUTRNMlUwWTJOa016TmlaakE0WmpKaFkyUTROV1F3WXpaaU9HTTRNV1ZtTmlJc0NpQWdJQ0FnSUNKdFpYUmhaR0YwWVNJZ09pQjdDaUFnSUNBZ0lDQWdJbTF2WkdWc0lpQTZJQ0p6YkdsdElnb2dJQ0FnSUNCOUNpQWdJQ0I5TEFvZ0lDQWdJa05CVUVVaUlEb2dld29nSUNBZ0lDQWlkWEpzSWlBNklDSm9kSFJ3T2k4dmRHVjRkSFZ5WlhNdWJXbHVaV055WVdaMExtNWxkQzkwWlhoMGRYSmxMekl6TkRCak1HVXdNMlJrTWpSaE1URmlNVFZoT0dJek0yTXlZVGRsT1dVek1tRmlZakl3TlRGaU1qUTRNV1F3WW1FM1pHVm1aRFl6TldOaE4yRTVNek1pQ2lBZ0lDQjlDaUFnZlFwOSJ9XX10ABttaW5lY3JhZnQ6YmxvY2tfZW50aXR5X2RhdGF0ABZ7aWQ6Im1pbmVjcmFmdDpza3VsbCJ9dAAVbWluZWNyYWZ0OmN1c3RvbV9uYW1ldAEke2V4dHJhOlt7Ym9sZDowYixjb2xvcjoiZ29sZCIsaXRhbGljOjBiLG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiLtoL3tsaQgIix1bmRlcmxpbmVkOjBifSx7Ym9sZDowYixjb2xvcjoiI0ZGRjAwMCIsaXRhbGljOjBiLG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiJJUkwgTmFtZSAiLHVuZGVybGluZWQ6MGJ9LHtjb2xvcjoiZGFya19ncmF5IixpdGFsaWM6MGIsdGV4dDoifCAifSx7Y29sb3I6InllbGxvdyIsaXRhbGljOjBiLHRleHQ6IlByb1BsYXllciJ9XSx0ZXh0OiIifXQAFW1pbmVjcmFmdDpjdXN0b21fZGF0YXQAUHtQdWJsaWNCdWtraXRWYWx1ZXM6eyJzaHVyYWNvcmU6bWYtZ3VpIjoiMTUxMTQ0NjUtNTk1Zi00OWJkLTg5NjktMDE3YTNhZjI0ZTFmIn19eABxAH4AFA==
+  '47':
+    material: CLOCK
+    amount: 1
+    name: '&#FFD700⏳ &#fff000Age §8| &#FFFF0016'
+  '48':
+    material: MAP
+    amount: 1
+    name: '&#FFD700🪪 &#fff000Date Of ID Registration §8| &#FFFF00 23 May 2026'
+  '49':
+    material: FILLED_MAP
+    amount: 1
+    name: '&#FFD700⚐ &#fff000Country §8| &#FFFF00UAE'
+  '50':
+    material: KNOWLEDGE_BOOK
+    amount: 1
+    name: '&#FFD700🪪 &#fff000ID Number §8| &#FFFF00xxxxxxxxxxxxx'
+    lore:
+    - '&#FFD700▟§f▙ LMB To View ID Number'
+  '51':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+  '52':
+    material: COMMAND_BLOCK
+    amount: 1
+    name: '&#FFD700👤 &#fff000Account Status §8| &#FFFF00All Good ☑'
+  '53':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
