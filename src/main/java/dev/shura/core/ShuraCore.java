@@ -41,8 +41,11 @@ public final class ShuraCore extends JavaPlugin {
     private KitManager kitManager;
     private ArenaManager arenaManager;
     private MatchManager matchManager;
+    private dev.shura.core.match.TeamMatchManager teamMatchManager;
     private QueueManager queueManager;
     private PartyManager partyManager;
+    private dev.shura.core.party.PartyMatchService partyMatchService;
+    private dev.shura.core.party.PartyDuelManager partyDuelManager;
     private SpectatorManager spectatorManager;
     private TierlistManager tierlistManager;
     private BoardManager boardManager;
@@ -91,8 +94,11 @@ public final class ShuraCore extends JavaPlugin {
         arenaManager = new ArenaManager(this);
         tierlistManager = new TierlistManager(this);
         matchManager = new MatchManager(this);
+        teamMatchManager = new dev.shura.core.match.TeamMatchManager(this);
         queueManager = new QueueManager(this);
         partyManager = new PartyManager(this);
+        partyMatchService = new dev.shura.core.party.PartyMatchService(this);
+        partyDuelManager = new dev.shura.core.party.PartyDuelManager(this);
         spectatorManager = new SpectatorManager(this);
         boardManager = new BoardManager(this);
         whitelistManager = new WhitelistManager(this);
@@ -113,6 +119,7 @@ public final class ShuraCore extends JavaPlugin {
     @Override
     public void onDisable() {
         if (matchManager != null) matchManager.endAllMatches();
+        if (teamMatchManager != null) teamMatchManager.endAllMatches();
         if (queueManager != null) queueManager.clearAll();
         if (databaseService != null) databaseService.disconnect();
     }
@@ -192,6 +199,11 @@ public final class ShuraCore extends JavaPlugin {
                 if (match != null) {
                     match.handleLeave(p);
                 }
+            } else if (getTeamMatchManager().isInMatch(p.getUniqueId())) {
+                dev.shura.core.match.TeamMatch tm = getTeamMatchManager().getMatchByPlayer(p.getUniqueId());
+                if (tm != null) {
+                    tm.handleLeave(p);
+                }
             } else if (getQueueManager().isInQueue(p.getUniqueId())) {
                 getQueueManager().leaveAllQueues(p);
             } else if (getSpectatorManager().isSpectating(p.getUniqueId())) {
@@ -213,6 +225,7 @@ public final class ShuraCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new GameListener(this), this);
         getServer().getPluginManager().registerEvents(new InventoryListener(this), this);
         getServer().getPluginManager().registerEvents(new MatchListener(this), this);
+        getServer().getPluginManager().registerEvents(new KitRulesListener(this), this);
         getServer().getPluginManager().registerEvents(new GuiEditorListener(this), this);
         getServer().getPluginManager().registerEvents(new CustomGuiListener(this), this);
         getServer().getPluginManager().registerEvents(new dev.shura.core.listener.IDListener(this), this);
@@ -239,8 +252,32 @@ public final class ShuraCore extends JavaPlugin {
     public KitManager getKitManager() { return kitManager; }
     public ArenaManager getArenaManager() { return arenaManager; }
     public MatchManager getMatchManager() { return matchManager; }
+    public dev.shura.core.match.TeamMatchManager getTeamMatchManager() { return teamMatchManager; }
     public QueueManager getQueueManager() { return queueManager; }
     public PartyManager getPartyManager() { return partyManager; }
+    public dev.shura.core.party.PartyMatchService getPartyMatchService() { return partyMatchService; }
+    public dev.shura.core.party.PartyDuelManager getPartyDuelManager() { return partyDuelManager; }
+
+    /** True if the player is in either a 1v1 match or a team match. */
+    public boolean isInAnyMatch(java.util.UUID uuid) {
+        return matchManager.isInMatch(uuid) || teamMatchManager.isInMatch(uuid);
+    }
+
+    /** Returns the state of whichever match (1v1 or team) the player is in, or null. */
+    public dev.shura.core.match.MatchState getAnyMatchState(java.util.UUID uuid) {
+        Match m = matchManager.getMatchByPlayer(uuid);
+        if (m != null) return m.getState();
+        dev.shura.core.match.TeamMatch tm = teamMatchManager.getMatchByPlayer(uuid);
+        return tm != null ? tm.getState() : null;
+    }
+
+    /** Returns the kit of whichever match (1v1 or team) the player is in, or null. */
+    public dev.shura.core.kit.Kit getAnyMatchKit(java.util.UUID uuid) {
+        Match m = matchManager.getMatchByPlayer(uuid);
+        if (m != null) return m.getKit();
+        dev.shura.core.match.TeamMatch tm = teamMatchManager.getMatchByPlayer(uuid);
+        return tm != null ? tm.getKit() : null;
+    }
     public SpectatorManager getSpectatorManager() { return spectatorManager; }
     public TierlistManager getTierlistManager() { return tierlistManager; }
     public BoardManager getBoardManager() { return boardManager; }

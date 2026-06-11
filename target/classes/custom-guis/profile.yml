@@ -1,0 +1,180 @@
+name: profile
+type: chest-6
+title: Profile
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '1':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '2':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '3':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '4':
+    data: rO0ABXcEAAAAAXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABnQAAj09dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAKY29tcG9uZW50c3QADnNjaGVtYV92ZXJzaW9udXEAfgAGAAAABnQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1TdGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAABI/dAAVbWluZWNyYWZ0OnBsYXllcl9oZWFkc3EAfgAQAAAAAXNyABdqYXZhLnV0aWwuTGlua2VkSGFzaE1hcDTATlwQbMD7AgABWgALYWNjZXNzT3JkZXJ4cgARamF2YS51dGlsLkhhc2hNYXAFB9rBwxZg0QMAAkYACmxvYWRGYWN0b3JJAAl0aHJlc2hvbGR4cD9AAAAAAAAMdwgAAAAQAAAAA3QAEW1pbmVjcmFmdDpwcm9maWxldAXGe2lkOltJOy02MzExODI4ODAsLTEzMjE5NzEzLC0xNzA0Nzg5NTQ0LC0yMjA3ODkyNDJdLG5hbWU6IlJhcHB5Qm9zcyIscHJvcGVydGllczpbe25hbWU6InRleHR1cmVzIixzaWduYXR1cmU6IlhwOVVOQ2kyUW9ORkFnK282RlIxT1lPNWxTbmlSdFV6bkl2WHlHT1BQc0p5bEk0UGY1NUo2ZXd3R05hQkhlMGVGMENPb0NRSmoycTB0cXNJVzZYeFUwa2NpUVJibjZtY2YyVTBJN1Z3aHhkSXY5eGNTbS9CdlhodnNVU1AyeFl6K003U3kzRnFHZFZLYlQwaDdyMlpXRjNLc2NBMXNzRVQ2UU5RUDFkY0sxVis5amtXdUY4Q3M0NE9ER1lIS3hpNUtNcFo5MUdpSDA2OEloLzBMclRKZEhTNDZXV1B2cVpQNzNsRjdqZEh2MmpieUR2bk14dnB6R3hSR3MyOURGN3lwN2h4azBRbmRtNTk0K0YvUWQ3dkp5cVM1ekNRd1FVbXZiMnhaNG5PQnJlb0lqVWJqM1BFM2tac1Y5OU9SYTJ5NnBpMTRETnZwakl6Ni9CVXBnWHJSTEN1UzA2empqTXVlVWpRUEdGR1lKSC9FWDFIbVI3ZnlDOGF4S0I5QjBBZzgvd3k1MjNTMzU5RGtXR3RRcTA2WWZxR2MvMEcyN0VzWC9pWHFKUllEamFScjVmVFNCa2E0TGxkaTlpWlUvdE53NHIxc2c4VUx1WDVkVEtuMWxMRkl0VnJJQmV2V2ZwbkNPZjNiVUMxdU1ZSmRsS25LVjNubUxrMEc3SkJPMVdlTXVSR1VZTEhVL1ZIYit5MEpVL0cya0EvcHA2dmx4NTcrMDJtM1ZrbUxYcDRvY0U4UndZeVJHV241MW93amdIZ3FmZ0FWTm4yeEViNVYvNDFXNVRiakx5c0ZQUDB4dTlGb3A5YUNTQkE1VXV2ODZYZ0djQVZweStuK3VIQmw5d2ppNWV3Yll1VFpzUWlpa1ZHUmRpdndLL2RnZkIybVdab25nemFHTVYxeU9FPSIsdmFsdWU6ImV3b2dJQ0owYVcxbGMzUmhiWEFpSURvZ01UYzFNelkxTURjMk5ETTRNeXdLSUNBaWNISnZabWxzWlVsa0lpQTZJQ0prWVRZd1pUbGxNR1ptTXpZME9EZG1PV0UyTW1ZNVpEaG1NbVEzTURZd05pSXNDaUFnSW5CeWIyWnBiR1ZPWVcxbElpQTZJQ0pTWVhCd2VVSnZjM01pTEFvZ0lDSnphV2R1WVhSMWNtVlNaWEYxYVhKbFpDSWdPaUIwY25WbExBb2dJQ0owWlhoMGRYSmxjeUlnT2lCN0NpQWdJQ0FpVTB0SlRpSWdPaUI3Q2lBZ0lDQWdJQ0oxY213aUlEb2dJbWgwZEhBNkx5OTBaWGgwZFhKbGN5NXRhVzVsWTNKaFpuUXVibVYwTDNSbGVIUjFjbVV2TW1Vek16QmtPVGMxTVRSbE16VXpOVEE0TkRJd05XVmlaRGRtT1ROa04yUTRNMlUwWTJOa016TmlaakE0WmpKaFkyUTROV1F3WXpaaU9HTTRNV1ZtTmlJc0NpQWdJQ0FnSUNKdFpYUmhaR0YwWVNJZ09pQjdDaUFnSUNBZ0lDQWdJbTF2WkdWc0lpQTZJQ0p6YkdsdElnb2dJQ0FnSUNCOUNpQWdJQ0I5TEFvZ0lDQWdJa05CVUVVaUlEb2dld29nSUNBZ0lDQWlkWEpzSWlBNklDSm9kSFJ3T2k4dmRHVjRkSFZ5WlhNdWJXbHVaV055WVdaMExtNWxkQzkwWlhoMGRYSmxMekl6TkRCak1HVXdNMlJrTWpSaE1URmlNVFZoT0dJek0yTXlZVGRsT1dVek1tRmlZakl3TlRGaU1qUTRNV1F3WW1FM1pHVm1aRFl6TldOaE4yRTVNek1pQ2lBZ0lDQjlDaUFnZlFwOSJ9XX10ABttaW5lY3JhZnQ6YmxvY2tfZW50aXR5X2RhdGF0ABZ7aWQ6Im1pbmVjcmFmdDpza3VsbCJ9dAAVbWluZWNyYWZ0OmN1c3RvbV9uYW1ldAB/e2V4dHJhOlt7Ym9sZDowYixjb2xvcjoiZ29sZCIsaXRhbGljOjBiLG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiJNYWx3YXJpbmUncyBQcm9maWxlIEluZm8iLHVuZGVybGluZWQ6MGJ9XSx0ZXh0OiIifXgAcQB+ABQ=
+  '5':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '6':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '7':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '8':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '9':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '10':
+    data: rO0ABXcEAAAAAXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABnQAAj09dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAKY29tcG9uZW50c3QADnNjaGVtYV92ZXJzaW9udXEAfgAGAAAABnQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1TdGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAABI/dAAYbWluZWNyYWZ0OnNrZWxldG9uX3NrdWxsc3EAfgAQAAAAAXNyABdqYXZhLnV0aWwuTGlua2VkSGFzaE1hcDTATlwQbMD7AgABWgALYWNjZXNzT3JkZXJ4cgARamF2YS51dGlsLkhhc2hNYXAFB9rBwxZg0QMAAkYACmxvYWRGYWN0b3JJAAl0aHJlc2hvbGR4cD9AAAAAAAAMdwgAAAAQAAAAAXQAFW1pbmVjcmFmdDpjdXN0b21fbmFtZXQAcntleHRyYTpbe2JvbGQ6MGIsY29sb3I6ImFxdWEiLGl0YWxpYzowYixvYmZ1c2NhdGVkOjBiLHN0cmlrZXRocm91Z2g6MGIsdGV4dDoiRHVlbCBEZWF0aHMiLHVuZGVybGluZWQ6MGJ9XSx0ZXh0OiIifXgAcQB+ABQ=
+  '11':
+    material: DIAMOND_SWORD
+    amount: 1
+    name: §cDuel Kills
+    lore:
+    - '&#646464=&#7C7B77=&#94928A=&#ACAA9C=&#C3C1AF=&#DBD8C2=&#F3EFD5=&#F5F1D7=&#E1DEC8=&#CECBB9=&#BAB8AB=&#A6A59C=&#93928E=&#7F7F7F='
+    - §eNethpot §8●§f 0
+    - §eSword §0-§8 ● §f0
+    - §eAxe §0---§8 ● §f0
+    - §eUhc §0---§8 ● §f0
+    - §eCrystal §8 ● §f0
+    - §eMace §0--§8 ● §f0
+    - §eSmp §0---§8 ● §f0
+    - §eCartPvP §8 ● §f0
+    - '&#646464=&#7C7B77=&#94928A=&#ACAA9C=&#C3C1AF=&#DBD8C2=&#F3EFD5=&#F5F1D7=&#E1DEC8=&#CECBB9=&#BAB8AB=&#A6A59C=&#93928E=&#7F7F7F='
+  '16':
+    material: GLOW_ITEM_FRAME
+    amount: 1
+    name: '''&#D4FF00⛨ &#DBFF21S&#E3FF41e&#EAFF62n&#F1FF82d'' &#F5FE62D&#F8FE41u&#FCFD21e&#FFFC00l'
+    lore:
+    - §6▟§f▙ LMB
+  '17':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '18':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '19':
+    data: rO0ABXcEAAAAAXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABnQAAj09dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAKY29tcG9uZW50c3QADnNjaGVtYV92ZXJzaW9udXEAfgAGAAAABnQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1TdGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAABI/dAAfbWluZWNyYWZ0OndpdGhlcl9za2VsZXRvbl9za3VsbHNxAH4AEAAAAAFzcgAXamF2YS51dGlsLkxpbmtlZEhhc2hNYXA0wE5cEGzA+wIAAVoAC2FjY2Vzc09yZGVyeHIAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAJ0ABVtaW5lY3JhZnQ6Y3VzdG9tX25hbWV0AHF7ZXh0cmE6W3tib2xkOjBiLGNvbG9yOiJncmF5IixpdGFsaWM6MGIsb2JmdXNjYXRlZDowYixzdHJpa2V0aHJvdWdoOjBiLHRleHQ6IkZGQSBEZWF0aHMiLHVuZGVybGluZWQ6MGJ9XSx0ZXh0OiIifXQAFW1pbmVjcmFmdDpjdXN0b21fZGF0YXQAUHtQdWJsaWNCdWtraXRWYWx1ZXM6eyJzaHVyYWNvcmU6bWYtZ3VpIjoiN2IzNDk2YjEtYzJhOS00MTliLWI1MTktZGExYjI5NzU1ZWY5In19eABxAH4AFA==
+  '20':
+    material: NETHERITE_SWORD
+    amount: 1
+    name: '&#FF0000FFA Kills'
+    lore:
+    - '&#646464=&#7C7B77=&#94928A=&#ACAA9C=&#C3C1AF=&#DBD8C2=&#F3EFD5=&#F5F1D7=&#E1DEC8=&#CECBB9=&#BAB8AB=&#A6A59C=&#93928E=&#7F7F7F='
+    - §2SMP §8| §f12
+    - '&#FFF000UHC §8| §f3'
+    - §bSword §8| §f91
+    - §cNethPot §8| §f14
+    - §9Crystal §8| §f0
+    - §cCartTycoon §8| §f0
+    - §3Mace §8| §f0
+    - '&#646464=&#7C7B77=&#94928A=&#ACAA9C=&#C3C1AF=&#DBD8C2=&#F3EFD5=&#F5F1D7=&#E1DEC8=&#CECBB9=&#BAB8AB=&#A6A59C=&#93928E=&#7F7F7F='
+  '22':
+    material: TURTLE_HELMET
+    amount: 1
+    name: '&#FFF000§l💻 §eAccount Type §8| §bPremium'
+  '25':
+    material: TURTLE_SCUTE
+    amount: 1
+    name: '&#FFF000☻ §eAdd Friend'
+    lore:
+    - §6▟§f▙ LMB
+  '26':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '27':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '31':
+    material: BAMBOO_HANGING_SIGN
+    amount: 1
+    name: '&#FFF000🔔 §eStatus §8| &#FFF000Online / &#FF0000Offline'
+  '35':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '36':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '37':
+    material: TOTEM_OF_UNDYING
+    amount: 1
+    name: '&#FFF000⭐ §eRank §8| §fNone'
+  '38':
+    material: HONEY_BOTTLE
+    amount: 1
+    name: '&#FFF000🏹 §eMain Gamemode §8| §fNone'
+  '42':
+    material: LECTERN
+    amount: 1
+    name: '&#FFF000≡§e Description'
+    lore:
+    - §7Yo wsp gng guess what ur balls r smaller than me lol
+  '43':
+    material: LADDER
+    amount: 1
+    name: '&#FFF000⇄ §eChange Profile Theme Color'
+    lore:
+    - §7🔒 Requires A Rank.
+    - §6▟§f▙ LMB
+  '44':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '45':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '46':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '47':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '48':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '49':
+    material: RED_BED
+    amount: 1
+    name: '''&#FF0000🔙 &#FC2727G&#FB3A3Ao &#F86161B&#F67474a&#F06161c&#EA4D4Dk'' &#DE2727🔙'
+  '50':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '51':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '52':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '53':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''

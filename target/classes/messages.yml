@@ -1,0 +1,38 @@
+prefix-enabled: false
+prefix: "&#00B4FF&lShura&r&#808080PvP &#404040» &r"
+
+kit:
+  saved: "{prefix}&#00FF00Kit saved successfully!"
+
+whitelist:
+  command-blocked: "{prefix}&#FF0000You don't have permission to use that command."
+
+duel:
+  self-duel: "{prefix}&#FF0000You cannot duel yourself."
+  you-in-match: "{prefix}&#FF0000You are already in a match."
+  you-in-queue: "{prefix}&#FF0000You are already in queue."
+  target-in-match: "{prefix}&#FF0000{target} is already in a match."
+  target-in-queue: "{prefix}&#FF0000{target} is already in queue."
+  already-sent: "{prefix}&#FF0000You already sent a duel request to {target}."
+  request-sent: "{prefix}&#00FF00Duel request sent to &#FFFF00{target}&#00FF00!"
+  request-received: "{prefix}&#FFFF00{player} &#00FF00has sent you a duel request! &#808080[Click Here]"
+  request-expired-sender: "{prefix}&#FF0000Your duel request to &#FFFF00{target} &#FF0000has expired."
+  request-expired-receiver: "{prefix}&#FF0000Duel request from &#FFFF00{player} &#FF0000has expired."
+  no-request: "{prefix}&#FF0000You don't have any pending duel requests."
+  accepted: "{prefix}&#00FF00Duel request accepted!"
+  denied: "{prefix}&#FF0000You denied the duel request."
+  denied-sender: "{prefix}&#FF0000{target} denied your duel request."
+
+match:
+  countdown-5: "&#F0FB995&#FBFA77…"
+  countdown-4: "&#EDFB7B4&#FBFA77…"
+  countdown-3: "&#EDFB7B3&#FBFA77…"
+  countdown-2: "&#E7FB412&#FBFA77…"
+  countdown-1: "&#E1FB0C1&#FBFA77…"
+  fight: "&#FB7100⚔ &#FC8600F&#FC9A00i&#FDAF00g&#FEC400h&#FED800t &#FFED00⚔"
+
+errors:
+  player-not-found: "{prefix}&#FF0000Player &#FFFF00{target} &#FF0000not found or offline."
+  no-permission: "{prefix}&#FF0000You don't have permission to do that."
+  players-only: "{prefix}&#FF0000This command can only be used by players."
+  invalid-args: "{prefix}&#FF0000Invalid usage. &#808080{usage}"

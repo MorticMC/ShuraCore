@@ -15,20 +15,26 @@ import java.util.logging.Level;
 
 public class ArenaManager {
 
-    private static final int COPY_SPACING = 150; // blocks between copies
+    private static final int COPY_SPACING = 512; // blocks between copies (large enough to avoid overlap for big arenas)
+    private static final int GRID_WIDTH = 20;    // copies per grid row
     private static final int MIN_COPIES = 2;
 
     private final ShuraCore plugin;
     private final Map<String, Arena> arenas = new ConcurrentHashMap<>();
+    private final SchematicService schematics;
     private final ArenaReset arenaReset;
-    private final Map<String, Set<Location>> usedLocations = new ConcurrentHashMap<>(); // Track used locations per world
+    // Occupied copy origins per world — freed when a copy is removed so slots are reused (no leak)
+    private final Map<String, Set<Location>> usedLocations = new ConcurrentHashMap<>();
 
     public ArenaManager(ShuraCore plugin) {
         this.plugin = plugin;
-        this.arenaReset = new ArenaReset(plugin);
+        this.schematics = new SchematicService(plugin);
+        this.arenaReset = new ArenaReset(plugin, schematics);
         createDuelWorld();
         loadAll();
     }
+
+    public SchematicService getSchematics() { return schematics; }
 
     private void createDuelWorld() {
         WorldCreator creator = new WorldCreator("shura_duels");
@@ -64,17 +70,18 @@ public class ArenaManager {
 
     public ArenaCopy getOrCreateCopy(Arena arena) {
         ArenaCopy available = arena.getAvailableCopy();
-        if (available != null) {
-            available.claim();
+        if (available != null && available.claim()) {
             return available;
         }
-        // All copies in use — generate new ones based on autoCloneCount
+        // No ready copy free — generate more (async paste). The caller should retry shortly.
         for (int i = 0; i < arena.getAutoCloneCount(); i++) {
             generateCopy(arena);
         }
         available = arena.getAvailableCopy();
-        if (available != null) available.claim();
-        return available;
+        if (available != null && available.claim()) {
+            return available;
+        }
+        return null; // copies are warming up; caller re-queues / retries
     }
 
     public ArenaCopy generateCopy(Arena arena) {
@@ -84,18 +91,15 @@ public class ArenaManager {
             return null;
         }
 
-        // Find available location with smart spacing
-        int arenaWidth = arena.getWidth();
-        int arenaLength = arena.getLength();
-        Location origin = findAvailableLocation(duelWorld, arenaWidth, arenaLength);
+        Location origin = findAvailableLocation(duelWorld);
 
-        // Calculate offset from MINIMUM corner (not pos1)
+        // Offsets are calculated from the MINIMUM corner (the clipboard's origin)
         Location pos1 = arena.getPos1();
         Location pos2 = arena.getPos2();
         int minX = Math.min(pos1.getBlockX(), pos2.getBlockX());
         int minY = Math.min(pos1.getBlockY(), pos2.getBlockY());
         int minZ = Math.min(pos1.getBlockZ(), pos2.getBlockZ());
-        
+
         int offsetX = origin.getBlockX() - minX;
         int offsetY = origin.getBlockY() - minY;
         int offsetZ = origin.getBlockZ() - minZ;
@@ -108,109 +112,44 @@ public class ArenaManager {
         ArenaCopy copy = new ArenaCopy(arena.getId(), origin, copySpawnA, copySpawnB);
         arena.addCopy(copy);
 
-        // Paste arena blocks at origin (sync — runs on main thread)
-        pasteArena(arena, origin, duelWorld);
-
-        // Capture snapshot after paste
-        Bukkit.getScheduler().runTaskLater(plugin, () ->
-                arenaReset.captureSnapshot(copy, arena), 5L);
+        // Paste via FAWE (async). Mark ready only once the blocks have landed.
+        schematics.pasteAsync(arena, origin, () -> copy.setReady(true));
 
         return copy;
     }
 
-    private Location findAvailableLocation(World world, int arenaWidth, int arenaLength) {
-        Set<Location> worldLocations = usedLocations.computeIfAbsent(world.getName(), k -> new HashSet<>());
-        
-        int spacing = COPY_SPACING;
-        int maxAttempts = 100;
-        int attempt = 0;
-        
-        while (attempt < maxAttempts) {
-            int gridX = (attempt % 10) * spacing;
-            int gridZ = (attempt / 10) * spacing;
-            Location testLoc = new Location(world, gridX, 64, gridZ);
-            
-            // Check if this location conflicts with any existing arena
-            boolean conflict = false;
-            for (Location usedLoc : worldLocations) {
-                double distance = Math.sqrt(
-                    Math.pow(testLoc.getX() - usedLoc.getX(), 2) +
-                    Math.pow(testLoc.getZ() - usedLoc.getZ(), 2)
-                );
-                
-                // If too close, try with double spacing
-                if (distance < spacing) {
-                    conflict = true;
-                    break;
-                }
+    /** Returns the first free grid slot in the duel world, reusing slots freed by removed copies. */
+    private Location findAvailableLocation(World world) {
+        Set<Location> occupied = usedLocations.computeIfAbsent(world.getName(), k -> ConcurrentHashMap.newKeySet());
+
+        for (int attempt = 0; attempt < GRID_WIDTH * GRID_WIDTH * 4; attempt++) {
+            int gridX = (attempt % GRID_WIDTH) * COPY_SPACING;
+            int gridZ = (attempt / GRID_WIDTH) * COPY_SPACING;
+            Location slot = new Location(world, gridX, 64, gridZ);
+            if (occupied.add(slot)) {
+                return slot;
             }
-            
-            if (!conflict) {
-                worldLocations.add(testLoc);
-                return testLoc;
-            }
-            
-            // If conflict at 150, try 300 blocks away
-            if (spacing == COPY_SPACING) {
-                spacing = COPY_SPACING * 2;
-            }
-            
-            attempt++;
         }
-        
-        // Fallback to random location far away
-        Location fallback = new Location(world, attempt * spacing, 64, attempt * spacing);
-        worldLocations.add(fallback);
+        // Extremely unlikely fallback far outside the grid
+        Location fallback = new Location(world, GRID_WIDTH * COPY_SPACING * 2, 64, 0);
+        occupied.add(fallback);
         return fallback;
     }
 
-    private void pasteArena(Arena arena, Location origin, World targetWorld) {
-        Location pos1 = arena.getPos1();
-        Location pos2 = arena.getPos2();
-        World sourceWorld = pos1.getWorld();
-
-        int minX = Math.min(pos1.getBlockX(), pos2.getBlockX());
-        int minY = Math.min(pos1.getBlockY(), pos2.getBlockY());
-        int minZ = Math.min(pos1.getBlockZ(), pos2.getBlockZ());
-        int maxX = Math.max(pos1.getBlockX(), pos2.getBlockX());
-        int maxY = Math.max(pos1.getBlockY(), pos2.getBlockY());
-        int maxZ = Math.max(pos1.getBlockZ(), pos2.getBlockZ());
-
-        int offsetX = origin.getBlockX() - minX;
-        int offsetY = origin.getBlockY() - minY;
-        int offsetZ = origin.getBlockZ() - minZ;
-
-        // Paste in chunks to reduce lag
-        final int BLOCKS_PER_TICK = 1000;
-        List<int[]> blocks = new ArrayList<>();
-        
-        for (int x = minX; x <= maxX; x++)
-            for (int y = minY; y <= maxY; y++)
-                for (int z = minZ; z <= maxZ; z++)
-                    blocks.add(new int[]{x, y, z});
-        
-        final int[] index = {0};
-        Bukkit.getScheduler().runTaskTimer(plugin, task -> {
-            int count = 0;
-            while (index[0] < blocks.size() && count < BLOCKS_PER_TICK) {
-                int[] pos = blocks.get(index[0]);
-                targetWorld.getBlockAt(pos[0] + offsetX, pos[1] + offsetY, pos[2] + offsetZ)
-                        .setBlockData(sourceWorld.getBlockAt(pos[0], pos[1], pos[2]).getBlockData().clone(), false);
-                index[0]++;
-                count++;
-            }
-            if (index[0] >= blocks.size()) task.cancel();
-        }, 0L, 1L);
+    private void freeLocation(Location origin) {
+        if (origin == null || origin.getWorld() == null) return;
+        Set<Location> occupied = usedLocations.get(origin.getWorld().getName());
+        if (occupied != null) occupied.remove(origin);
     }
 
     public void resetArena(ArenaCopy copy) {
         arenaReset.reset(copy, () -> {
             Arena arena = arenas.get(copy.getArenaId());
             if (arena == null) return;
-            // If total copies exceed minimum and this copy is no longer needed, remove it
+            // Trim surplus copies back down to the minimum and free their origin slot
             if (arena.getCopies().size() > MIN_COPIES) {
                 arena.removeCopy(copy);
-                arenaReset.removeSnapshot(copy.getCopyId());
+                freeLocation(copy.getOrigin());
             }
         });
     }
@@ -250,60 +189,24 @@ public class ArenaManager {
             newArena.addBoundKit(kitId);
         }
 
-        // Paste blocks from source to new location
-        pasteArenaBlocks(sourceArena, pasteLocation, pasteLocation.getWorld());
+        // Paste blocks from source to the new location via FAWE so recorded positions stay aligned
+        Location srcPos1 = sourceArena.getPos1();
+        Location srcMin = new Location(srcPos1.getWorld(),
+                Math.min(srcPos1.getBlockX(), sourceArena.getPos2().getBlockX()),
+                Math.min(srcPos1.getBlockY(), sourceArena.getPos2().getBlockY()),
+                Math.min(srcPos1.getBlockZ(), sourceArena.getPos2().getBlockZ()));
+        Location targetMin = srcMin.clone().add(offsetX, offsetY, offsetZ);
+        targetMin.setWorld(pasteLocation.getWorld());
 
-        // Save new arena
-        saveArena(newArena);
-
-        player.sendMessage(dev.shura.core.extra.MessageService.colorizeComponent(
-            "&aArena copied and pasted! New arena: &e" + newArenaName));
-        dev.shura.core.util.SoundUtil.playSuccess(player);
-
-        // Initialize copies for the new arena
-        Bukkit.getScheduler().runTaskLater(plugin, () -> {
+        schematics.pasteAsync(sourceArena, targetMin, () -> {
+            saveArena(newArena);
+            player.sendMessage(dev.shura.core.extra.MessageService.colorizeComponent(
+                "&aArena copied and pasted! New arena: &e" + newArenaName));
+            dev.shura.core.util.SoundUtil.playSuccess(player);
             while (newArena.getCopies().size() < MIN_COPIES) {
                 generateCopy(newArena);
             }
-        }, 20L);
-    }
-
-    private void pasteArenaBlocks(Arena sourceArena, Location pasteOrigin, World targetWorld) {
-        Location pos1 = sourceArena.getPos1();
-        Location pos2 = sourceArena.getPos2();
-        World sourceWorld = pos1.getWorld();
-
-        int minX = Math.min(pos1.getBlockX(), pos2.getBlockX());
-        int minY = Math.min(pos1.getBlockY(), pos2.getBlockY());
-        int minZ = Math.min(pos1.getBlockZ(), pos2.getBlockZ());
-        int maxX = Math.max(pos1.getBlockX(), pos2.getBlockX());
-        int maxY = Math.max(pos1.getBlockY(), pos2.getBlockY());
-        int maxZ = Math.max(pos1.getBlockZ(), pos2.getBlockZ());
-
-        int offsetX = pasteOrigin.getBlockX() - minX;
-        int offsetY = pasteOrigin.getBlockY() - minY;
-        int offsetZ = pasteOrigin.getBlockZ() - minZ;
-
-        final int BLOCKS_PER_TICK = 1000;
-        List<int[]> blocks = new ArrayList<>();
-        
-        for (int x = minX; x <= maxX; x++)
-            for (int y = minY; y <= maxY; y++)
-                for (int z = minZ; z <= maxZ; z++)
-                    blocks.add(new int[]{x, y, z});
-        
-        final int[] index = {0};
-        Bukkit.getScheduler().runTaskTimer(plugin, task -> {
-            int count = 0;
-            while (index[0] < blocks.size() && count < BLOCKS_PER_TICK) {
-                int[] pos = blocks.get(index[0]);
-                targetWorld.getBlockAt(pos[0] + offsetX, pos[1] + offsetY, pos[2] + offsetZ)
-                        .setBlockData(sourceWorld.getBlockAt(pos[0], pos[1], pos[2]).getBlockData().clone(), false);
-                index[0]++;
-                count++;
-            }
-            if (index[0] >= blocks.size()) task.cancel();
-        }, 0L, 1L);
+        });
     }
 
     public void setAutoCloneCount(Arena arena, int count) {
@@ -336,7 +239,11 @@ public class ArenaManager {
 
     public void deleteArena(String id) {
         Arena arena = arenas.remove(id);
-        if (arena != null) arena.getCopies().forEach(c -> arenaReset.removeSnapshot(c.getCopyId()));
+        if (arena != null) {
+            arena.getCopies().forEach(c -> freeLocation(c.getOrigin()));
+            arena.getCopies().clear();
+            arenaReset.invalidate(id);
+        }
         plugin.getDatabaseService().updateAsync("DELETE FROM arenas WHERE id = ?",
                 stmt -> stmt.setString(1, id));
     }

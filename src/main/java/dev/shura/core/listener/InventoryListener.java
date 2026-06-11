@@ -1,13 +1,11 @@
 package dev.shura.core.listener;
 
 import dev.shura.core.ShuraCore;
-import dev.shura.core.match.Match;
 import dev.shura.core.match.MatchState;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
-import org.bukkit.event.player.PlayerSwapHandItemsEvent;
 
 public class InventoryListener implements Listener {
 
@@ -20,10 +18,10 @@ public class InventoryListener implements Listener {
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
         if (!(event.getWhoClicked() instanceof Player player)) return;
-        
+
         String title = net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer.plainText()
                 .serialize(event.getView().title());
-        
+
         if (title.contains("Arena:")) {
             event.setCancelled(true);
             String arenaName = title.substring(title.indexOf("Arena:") + 6).trim();
@@ -33,19 +31,9 @@ public class InventoryListener implements Listener {
             }
             return;
         }
-        
-        Match match = plugin.getMatchManager().getMatchByPlayer(player.getUniqueId());
-        if (match != null && match.getState() == MatchState.STARTING) {
-            event.setCancelled(true);
-            return;
-        }
-    }
 
-    @EventHandler
-    public void onSwapHand(PlayerSwapHandItemsEvent event) {
-        Player player = event.getPlayer();
-        Match match = plugin.getMatchManager().getMatchByPlayer(player.getUniqueId());
-        if (match != null && match.getKit().getRules().isNoOffhand()) {
+        // Lock inventory while a match (1v1 or team) is in its setup phase
+        if (plugin.getAnyMatchState(player.getUniqueId()) == MatchState.STARTING) {
             event.setCancelled(true);
         }
     }

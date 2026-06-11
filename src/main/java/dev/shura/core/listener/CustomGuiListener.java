@@ -76,15 +76,13 @@ public class CustomGuiListener implements Listener {
         }
         
         if (matchedGui.getName().equalsIgnoreCase("party-split")) {
-            if (event.getSlot() == 1) {
+            if (event.getSlot() == 3) {
+                // "2 Teams" — split the party into Red vs Blue and start the match
                 player.closeInventory();
-                plugin.getGuiEditorManager().openGui(player, "teams-of-4");
-            } else if (event.getSlot() == 3) {
+                plugin.getPartyMatchService().startSplit(player, dev.shura.core.match.MatchFormat.FT3);
+            } else if (event.getSlot() == 1 || event.getSlot() == 5) {
                 player.closeInventory();
-                plugin.getGuiEditorManager().openGui(player, "teams-of-2");
-            } else if (event.getSlot() == 5) {
-                player.closeInventory();
-                plugin.getGuiEditorManager().openGui(player, "teams-of-3");
+                player.sendMessage(Component.text("Multi-team splits are coming soon! Use 2 Teams for now.", NamedTextColor.YELLOW));
             } else if (event.getSlot() == 7) {
                 player.closeInventory();
                 plugin.getGuiEditorManager().openGui(player, "party-match");

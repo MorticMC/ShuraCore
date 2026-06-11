@@ -1,0 +1,26 @@
+name: duel-request
+type: hopper
+title: Duel Request
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '1':
+    material: POTION
+    amount: 1
+    name: '&#D4FF00☑ &#D7FF14A&#DBFF29c&#DEFF3Dc&#E2FF51e&#E5FF66p&#E9FF7At &#ECFF8ED&#F0FFA3u&#F3FFB7e&#F4FFA3l &#F6FE8ER&#F7FE7Ae&#F8FE66q&#FAFD51u&#FBFD3De&#FCFD29s&#FEFC14t &#FFFC00☑'
+  '2':
+    material: OAK_HANGING_SIGN
+    amount: 1
+    name: '&#005EFF§l🧍 &#005EFFO&#1C83FFp&#37A7FFp&#53CCFFo&#53C7FFn&#379AFFe&#1C6DFFn&#0040FFt &#0040FF§l🧍'
+    lore:
+    - §7Malwarine
+  '3':
+    material: POTION
+    amount: 1
+    name: '&#FF0000Ⓧ &#FF0E0ED&#FF1D1De&#FF2B2Bn&#FF3A3Ay &#FF4848D&#FF5656u&#FF6565e&#FF7373l &#FF6565R&#FF5656e&#FF4848q&#FF3A3Au&#FF2B2Be&#FF1D1Ds&#FF0E0Et &#FF0000Ⓧ'
+  '4':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''

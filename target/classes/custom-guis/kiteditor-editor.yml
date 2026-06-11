@@ -1,0 +1,105 @@
+name: kiteditor-editor
+type: chest-6
+title: Editing Layout
+items:
+  '0':
+    material: WARPED_HANGING_SIGN
+    amount: 1
+    name: '&#3aa6ff§l👕 &#3aa6ffA&#5fb8ffr&#84c9ffm&#a9dbffo&#ceecffr
+      &#ceecff§l👕'
+    lore:
+    - §f➡
+  '35':
+    material: JIGSAW
+    amount: 1
+    name: '&#e3ff00§l🎮 &#e3ff00G&#e7fe20a&#ebfe3fm&#effd5fe&#f3fd7fm&#f7fc9fo&#fbfcbed&#fffbdee
+      &#fffbde§l🎮'
+  '36':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '6':
+    material: ACACIA_HANGING_SIGN
+    amount: 1
+    name: '&#ffbc26🤚 &#ffbc26O&#ffc745f&#ffd163f&#ffdc82H&#ffe6a1a&#fff1bfn&#fffbded
+      🤚'
+    lore:
+    - §f➡
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '10':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '11':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '12':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '44':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '13':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '45':
+    material: OAK_HANGING_SIGN
+    amount: 1
+    name: '&#53ff65🍖 &#53ff65H&#63ff77o&#73ff8at&#83ff9cB&#93ffaea&#a3ffc0r
+      &#9cffaaI&#95ff94t&#8eff7ee&#87ff68m&#80ff52s
+      🍖'
+    lore:
+    - §f➡
+  '14':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '15':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '16':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '17':
+    material: CHEST_MINECART
+    amount: 1
+    name: '&#ffbc26🖫 S&#ffc135a&#ffc745v&#ffcc54e &#ffd163K&#ffd673i&#ffdc82t
+      &#ffe191L&#ffe6a1a&#ffebb0y&#fff1bfo&#fff6cfu&#fffbdet
+      🖫'
+  '18':
+    material: JUNGLE_HANGING_SIGN
+    amount: 1
+    name: '&#bcff17💼 I&#c4ff34n&#cdff51v&#d5ff6ee&#deff8bn&#e6ffa8t&#eeffc5o&#f7ffe2r§fy
+      💼'
+    lore:
+    - §f➡
+  '53':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '26':
+    material: SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    name: '&#bcbcf5🧵 &#cfc1eaA&#d8c4e5r&#e1c7dfm&#eacadao&#f4ccd4r
+      &#eec8d5T&#dfc0dcr&#d1b9e2i&#c2b1e8m&#b3aaefs'
+  '27':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''

@@ -183,9 +183,9 @@ public class QueueManager {
         Player playerB = Bukkit.getPlayer(b.getPlayerUuid());
 
         if (playerA == null || playerB == null) {
-            // One player disconnected — re-queue the other
-            if (playerA != null) joinQueue(playerA, a.getTierlistId());
-            if (playerB != null) joinQueue(playerB, b.getTierlistId());
+            // One player disconnected — re-queue the other (preserving premium/cracked)
+            if (playerA != null) joinQueue(playerA, a.getTierlistId(), a.isPremium());
+            if (playerB != null) joinQueue(playerB, b.getTierlistId(), b.isPremium());
             return;
         }
 
@@ -207,9 +207,9 @@ public class QueueManager {
         if (arena == null) {
             playerA.sendMessage(Component.text("No arenas available. Please wait...", NamedTextColor.RED));
             playerB.sendMessage(Component.text("No arenas available. Please wait...", NamedTextColor.RED));
-            // Re-queue both
-            joinQueue(playerA, a.getTierlistId());
-            joinQueue(playerB, b.getTierlistId());
+            // Re-queue both (preserving premium/cracked)
+            joinQueue(playerA, a.getTierlistId(), a.isPremium());
+            joinQueue(playerB, b.getTierlistId(), b.isPremium());
             return;
         }
 
@@ -270,9 +270,19 @@ public class QueueManager {
         return entries != null ? new HashSet<>(entries) : new HashSet<>();
     }
 
+    /** Total players queued for a tierlist/kit id across both the cracked and premium queues. */
     public int getQueueSize(String tierlistId) {
-        ConcurrentLinkedQueue<QueueEntry> queue = queues.get(tierlistId);
+        return getQueueSize(tierlistId, false) + getQueueSize(tierlistId, true);
+    }
+
+    public int getQueueSize(String tierlistId, boolean premium) {
+        ConcurrentLinkedQueue<QueueEntry> queue = queues.get(tierlistId + (premium ? "_premium" : "_cracked"));
         return queue == null ? 0 : queue.size();
+    }
+
+    /** Total players queued across every queue. */
+    public int getTotalQueued() {
+        return queues.values().stream().mapToInt(ConcurrentLinkedQueue::size).sum();
     }
 
     public void clearAll() {

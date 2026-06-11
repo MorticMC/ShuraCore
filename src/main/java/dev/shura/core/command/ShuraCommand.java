@@ -134,11 +134,18 @@ public class ShuraCommand implements CommandExecutor, TabCompleter {
         }
 
         if (args.length < 2) {
-            player.sendMessage(Component.text("Usage: /shura kit <create|delete|list|update>", NamedTextColor.RED));
+            player.sendMessage(Component.text("Usage: /shura kit <create|delete|list|update|rules>", NamedTextColor.RED));
             return;
         }
 
         switch (args[1].toLowerCase()) {
+            case "rules" -> {
+                if (args.length < 3) { player.sendMessage(Component.text("Usage: /shura kit rules <name|full-id>", NamedTextColor.RED)); return; }
+                Kit kit = findKitByNameOrFullId(args[2]);
+                if (kit == null) kit = findKitByName(args[2]);
+                if (kit == null) { player.sendMessage(Component.text("Kit not found.", NamedTextColor.RED)); return; }
+                new dev.shura.core.gui.KitRulesGui(plugin, kit).open(player);
+            }
             case "create" -> {
                 if (args.length < 3) { player.sendMessage(Component.text("Usage: /shura kit create <name> [tierlist]", NamedTextColor.RED)); return; }
                 String tierlistId = args.length > 3 ? args[3] : null;
@@ -319,7 +326,7 @@ public class ShuraCommand implements CommandExecutor, TabCompleter {
         sender.sendMessage(MessageService.colorizeComponent("&#00B4FF&lShuraCore Admin Commands"));
         sender.sendMessage(MessageService.colorizeComponent("  &e/shura reload &8— &7Reload configurations"));
         sender.sendMessage(MessageService.colorizeComponent("  &e/shura arena <create|delete|list|menu|settings>"));
-        sender.sendMessage(MessageService.colorizeComponent("  &e/shura kit <create|delete|list|update>"));
+        sender.sendMessage(MessageService.colorizeComponent("  &e/shura kit <create|delete|list|update|rules>"));
         sender.sendMessage(MessageService.colorizeComponent("  &e/shura whitelist <allow|deny> <group> <command>"));
         sender.sendMessage(MessageService.colorizeComponent("  &e/shura inventoryitems set <party-leader|party-member|lobby>"));
         sender.sendMessage(MessageService.colorizeComponent("  &e/shura interaction <enable|disable> &8— &7Toggle lobby restrictions"));
@@ -345,8 +352,8 @@ public class ShuraCommand implements CommandExecutor, TabCompleter {
             }
             case "kit" -> {
                 if (args.length == 2)
-                    return filter(List.of("create", "delete", "list", "update"), args[1]);
-                if (args.length == 3 && List.of("delete", "update").contains(args[1].toLowerCase())) {
+                    return filter(List.of("create", "delete", "list", "update", "rules"), args[1]);
+                if (args.length == 3 && List.of("delete", "update", "rules").contains(args[1].toLowerCase())) {
                     List<String> names = new java.util.ArrayList<>();
                     var kac = plugin.getKitsArenasConfig();
                     for (String tierlistKey : kac.getTierlistIds()) {

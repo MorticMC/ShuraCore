@@ -33,6 +33,14 @@
             <id>codemc-releases</id>
             <url>https://repo.codemc.io/repository/maven-releases/</url>
         </repository>
+        <repository>
+            <id>intellectualsites</id>
+            <url>https://mvn.intellectualsites.com/repository/releases/</url>
+        </repository>
+        <repository>
+            <id>enginehub</id>
+            <url>https://maven.enginehub.org/repo/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -90,6 +98,20 @@
             <artifactId>packetevents-spigot</artifactId>
             <version>2.7.0</version>
             <scope>compile</scope>
+        </dependency>
+
+        <!-- FastAsyncWorldEdit (runtime plugin) - used for fast async arena paste/regen -->
+        <dependency>
+            <groupId>com.fastasyncworldedit</groupId>
+            <artifactId>FastAsyncWorldEdit-Core</artifactId>
+            <version>2.11.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fastasyncworldedit</groupId>
+            <artifactId>FastAsyncWorldEdit-Bukkit</artifactId>
+            <version>2.11.2</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

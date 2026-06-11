@@ -56,6 +56,8 @@ public class SpectatorManager {
     public boolean spectateMatch(Player spectator, UUID matchId) {
         Match match = plugin.getMatchManager().getMatch(matchId);
         if (match == null) {
+            dev.shura.core.match.TeamMatch teamMatch = plugin.getTeamMatchManager().getMatch(matchId);
+            if (teamMatch != null) return spectateTeamMatch(spectator, teamMatch);
             spectator.sendMessage(Component.text("This match is no longer active.", NamedTextColor.RED));
             return false;
         }
@@ -85,6 +87,27 @@ public class SpectatorManager {
         return true;
     }
 
+    /** Spectate a team (party) match. */
+    public boolean spectateTeamMatch(Player spectator, dev.shura.core.match.TeamMatch teamMatch) {
+        if (plugin.isInAnyMatch(spectator.getUniqueId())) {
+            spectator.sendMessage(Component.text("You cannot spectate while in a match.", NamedTextColor.RED));
+            return false;
+        }
+        spectatorMatchMap.put(spectator.getUniqueId(), teamMatch.getMatchId());
+        teamMatch.addSpectator(spectator.getUniqueId());
+
+        spectator.setGameMode(GameMode.SPECTATOR);
+        spectator.teleport(teamMatch.getArenaCopy().getSpawnA());
+        spectator.sendMessage(Component.text("Now spectating the party match.", NamedTextColor.GRAY));
+        plugin.getTabManager().update(spectator);
+
+        for (UUID memberUuid : teamMatch.getAllPlayers()) {
+            Player p = Bukkit.getPlayer(memberUuid);
+            if (p != null) p.hidePlayer(plugin, spectator);
+        }
+        return true;
+    }
+
     public void removeSpectator(Player spectator) {
         UUID matchId = spectatorMatchMap.remove(spectator.getUniqueId());
         if (matchId != null) {
@@ -95,6 +118,15 @@ public class SpectatorManager {
                 for (UUID memberUuid : new UUID[]{match.getMatchPlayerA().getUuid(), match.getMatchPlayerB().getUuid()}) {
                     Player p = Bukkit.getPlayer(memberUuid);
                     if (p != null) p.showPlayer(plugin, spectator);
+                }
+            } else {
+                dev.shura.core.match.TeamMatch teamMatch = plugin.getTeamMatchManager().getMatch(matchId);
+                if (teamMatch != null) {
+                    teamMatch.removeSpectator(spectator.getUniqueId());
+                    for (UUID memberUuid : teamMatch.getAllPlayers()) {
+                        Player p = Bukkit.getPlayer(memberUuid);
+                        if (p != null) p.showPlayer(plugin, spectator);
+                    }
                 }
             }
         }

@@ -132,6 +132,10 @@ public class PartyManager {
         return partyId != null ? parties.get(partyId) : null;
     }
 
+    public Party getPartyById(UUID partyId) {
+        return partyId != null ? parties.get(partyId) : null;
+    }
+
     public boolean isInParty(UUID uuid) { return playerPartyMap.containsKey(uuid); }
 
     public void handleDisconnect(UUID uuid) {

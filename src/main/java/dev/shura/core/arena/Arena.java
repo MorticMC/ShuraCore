@@ -34,11 +34,11 @@ public class Arena {
     }
 
     public boolean hasAvailableCopy() {
-        return copies.stream().anyMatch(c -> !c.isInUse());
+        return copies.stream().anyMatch(c -> c.isReady() && !c.isInUse());
     }
 
     public ArenaCopy getAvailableCopy() {
-        return copies.stream().filter(c -> !c.isInUse()).findFirst().orElse(null);
+        return copies.stream().filter(c -> c.isReady() && !c.isInUse()).findFirst().orElse(null);
     }
 
     public void addCopy(ArenaCopy copy) { copies.add(copy); }

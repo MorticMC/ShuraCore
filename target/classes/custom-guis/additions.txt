@@ -1,0 +1,77 @@
+===========================================
+  ShuraCore - Custom GUI Item Flags
+===========================================
+
+Item flags can be added to hide specific item attributes in GUIs.
+Use these in your custom GUI YAML files under the item configuration.
+
+Available Item Flags:
+---------------------
+
+HIDE_ENCHANTS          - Hides enchantments
+HIDE_ATTRIBUTES        - Hides attribute modifiers (damage, speed, etc.)
+HIDE_UNBREAKABLE       - Hides the unbreakable state
+HIDE_DESTROYS          - Hides what blocks the item can destroy
+HIDE_PLACED_ON         - Hides where the item can be placed
+HIDE_POTION_EFFECTS    - Hides potion effects
+HIDE_DYE               - Hides dye color on leather armor
+HIDE_ARMOR_TRIM        - Hides armor trim patterns
+
+Special Flags:
+--------------
+
+HIDE_ALL               - Hides all item information (applies all flags above)
+
+Example Usage in YAML:
+----------------------
+
+items:
+  0:
+    material: DIAMOND_SWORD
+    name: "&#00B4FF&lPvP Sword"
+    amount: 1
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+
+  1:
+    material: POTION
+    name: "&#FF0000Health Potion"
+    flags:
+      - HIDE_POTION_EFFECTS
+
+  2:
+    material: LEATHER_CHESTPLATE
+    name: "&#FFD700Custom Armor"
+    flags:
+      - HIDE_DYE
+      - HIDE_ATTRIBUTES
+
+  3:
+    material: ENCHANTED_BOOK
+    name: "&#00FFFFClean Item"
+    flags:
+      - HIDE_ALL
+
+Global Flag Configuration:
+--------------------------
+
+You can enable/disable flags globally for all items in a GUI:
+
+gui:
+  name: "My Custom GUI"
+  type: "chest-3"
+  title: "&#00B4FF&lMy GUI"
+  hide-flags: true          # Enables HIDE_ALL for all items
+  # OR
+  hide-flags: false         # Shows all item information (default)
+
+Notes:
+------
+- Multiple flags can be applied to a single item
+- Flags are case-sensitive (use UPPERCASE)
+- Not all flags apply to all items (e.g., HIDE_DYE only works on leather armor)
+- If no flags are specified, all item information will be visible
+- HIDE_ALL is a shortcut to apply all available flags at once
+- Global hide-flags setting can be overridden per item

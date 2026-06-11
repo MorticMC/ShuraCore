@@ -1,0 +1,14 @@
+name: main-cart
+type: hopper
+title: Cart
+items:
+  '1':
+    material: COMMAND_BLOCK_MINECART
+    amount: 1
+    name: '&#fb0000💣 &#fb0000H&#fc0c0ci&#fc1818g&#fd2424h
+      &#fd3030T&#fe3c3ci&#fe4848e&#ff5454r &#fa4848C&#f43c3ca&#ef3030r&#ea2424t&#e51818P&#df0c0cv&#da0000P'
+  '3':
+    material: TNT_MINECART
+    amount: 1
+    name: '&#fb0000💣 L&#fc0d0do&#fc1a1aw &#fd2727T&#fd3434i&#fe4141e&#ff4e4er
+      &#fc4e4eC&#f64141a&#f13434r&#eb2727t&#e51a1aP&#e00d0dv&#da0000P'

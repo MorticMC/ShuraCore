@@ -1,0 +1,363 @@
+# queue-type options:
+#   - ranked: Only appears in Cracked/Premium Queue (ranked)
+#   - unranked: Only appears in Unranked Queue
+#   - both: Appears in both ranked and unranked queues
+
+tierlists:
+  pvptiers:
+    id: "IO"
+    gamemodes:
+      sword:
+        name: "Sword"
+        material: DIAMOND_SWORD
+        full-id: "Sword-IO"
+        slot: 10
+        queue-type: "unranked"
+      netherite:
+        name: "NetheritePot"
+        material: NETHERITE_HELMET
+        full-id: "NetheritePot-IO"
+        slot: 11
+        queue-type: "unranked"
+      crystal:
+        name: "Crystal"
+        material: END_CRYSTAL
+        full-id: "Crystal-IO"
+        slot: 12
+        queue-type: "unranked"
+      uhc:
+        name: "UHC"
+        material: LAVA_BUCKET
+        full-id: "UHC-IO"
+        slot: 13
+        queue-type: "unranked"
+      diapot:
+        name: "Diamond Pot"
+        material: POTION
+        full-id: "Diapot-IO"
+        slot: 14
+        queue-type: "unranked"
+      smp:
+        name: "SMP"
+        material: ENDER_PEARL
+        full-id: "SMP-IO"
+        slot: 15
+        queue-type: "unranked"
+      mace:
+        name: "Diamond Mace"
+        material: MACE
+        full-id: "DiaMace-IO"
+        slot: 16
+        queue-type: "unranked"
+      axe:
+        name: "Axe"
+        material: DIAMOND_AXE
+        full-id: "Axe-IO"
+        slot: 19
+        queue-type: "ranked"
+
+  mctiers:
+    id: "COM"
+    gamemodes:
+      sword:
+        name: "Sword"
+        material: DIAMOND_SWORD
+        full-id: "Sword-COM"
+        slot: 10
+        queue-type: "ranked"
+      nethop:
+        name: "NetheriteOP"
+        material: NETHERITE_HELMET
+        full-id: "NetheriteOP-COM"
+        slot: 11
+        queue-type: "ranked"
+      vanilla:
+        name: "Vanilla"
+        material: END_CRYSTAL
+        full-id: "Vanilla-COM"
+        slot: 12
+        queue-type: "ranked"
+      uhc:
+        name: "UHC"
+        material: LAVA_BUCKET
+        full-id: "UHC-COM"
+        slot: 13
+        queue-type: "ranked"
+      potion:
+        name: "Potion"
+        material: POTION
+        full-id: "Diapot-COM"
+        slot: 14
+        queue-type: "ranked"
+      smp:
+        name: "SMP"
+        material: ENDER_PEARL
+        full-id: "SMP-COM"
+        slot: 15
+        queue-type: "ranked"
+      axe:
+        name: "Axe"
+        material: DIAMOND_AXE
+        full-id: "Axe-COM"
+        slot: 16
+        queue-type: "ranked"
+      mace:
+        name: "Mace"
+        material: MACE
+        full-id: "Mace-COM"
+        slot: 19
+        queue-type: "ranked"
+
+  subtiers:
+    id: "Sub"
+    gamemodes:
+      ltcart:
+        name: "LT Cart"
+        material: TNT_MINECART
+        full-id: "LT-Cart-Sub"
+        slot: 10
+        queue-type: "unranked"
+      htcart:
+        name: "HT Cart"
+        material: TNT_MINECART
+        full-id: "HT-Cart-Sub"
+        slot: 11
+        queue-type: "ranked"
+      diamondvanilla:
+        name: "Diamond Vanilla"
+        material: END_CRYSTAL
+        full-id: "Diamond-Vanilla-Sub"
+        slot: 12
+        queue-type: "unranked"
+      debuff:
+        name: "Debuff"
+        material: GOLDEN_CARROT
+        full-id: "Debuff-Sub"
+        slot: 13
+        queue-type: "unranked"
+      elytra:
+        name: "Elytra"
+        material: ELYTRA
+        full-id: "Elytra-Sub"
+        slot: 14
+        queue-type: "ranked"
+      speed:
+        name: "Speed"
+        material: POTION
+        full-id: "Speed-Sub"
+        slot: 15
+        queue-type: "ranked"
+      creeper:
+        name: "Creeper PvP"
+        material: CREEPER_SPAWN_EGG
+        full-id: "Creeper-Sub"
+        slot: 16
+        queue-type: "unranked"
+      manhunt:
+        name: "Manhunt"
+        material: COMPASS
+        full-id: "Manhunt-Sub"
+        slot: 19
+        queue-type: "unranked"
+      diasmp:
+        name: "Diamond SMP"
+        material: CHORUS_FRUIT
+        full-id: "DiaSMP-Sub"
+        slot: 20
+        queue-type: "ranked"
+      bow:
+        name: "Bow"
+        material: BOW
+        full-id: "Bow-Sub"
+        slot: 21
+        queue-type: "unranked"
+      bed:
+        name: "Bed"
+        material: RED_BED
+        full-id: "Bed-Sub"
+        slot: 22
+        queue-type: "unranked"
+      ogvanilla:
+        name: "OG Vanilla"
+        material: GOLDEN_APPLE
+        full-id: "OG-Vanilla-Sub"
+        slot: 23
+        queue-type: "unranked"
+      trident:
+        name: "Trident"
+        material: TRIDENT
+        full-id: "Trident-Sub"
+        slot: 24
+        queue-type: "unranked"
+
+  cactustiers:
+    id: "Cactus"
+    gamemodes:
+      sword:
+        name: "Sword"
+        material: DIAMOND_SWORD
+        full-id: "Sword-Cactus"
+        slot: 10
+        queue-type: "unranked"
+      nethop:
+        name: "NetheriteOP"
+        material: NETHERITE_HELMET
+        full-id: "NetheriteOP-Cactus"
+        slot: 11
+        queue-type: "unranked"
+      vanilla:
+        name: "Vanilla"
+        material: END_CRYSTAL
+        full-id: "Vanilla-Cactus"
+        slot: 12
+        queue-type: "unranked"
+      uhc:
+        name: "UHC"
+        material: LAVA_BUCKET
+        full-id: "UHC-Cactus"
+        slot: 13
+        queue-type: "unranked"
+      potion:
+        name: "Potion"
+        material: POTION
+        full-id: "Diapot-Cactus"
+        slot: 14
+        queue-type: "unranked"
+      smp:
+        name: "SMP"
+        material: ENDER_PEARL
+        full-id: "SMP-Cactus"
+        slot: 15
+        queue-type: "unranked"
+      axe:
+        name: "Axe"
+        material: DIAMOND_AXE
+        full-id: "Axe-Cactus"
+        slot: 16
+        queue-type: "unranked"
+      mace:
+        name: "Mace"
+        material: MACE
+        full-id: "Mace-Cactus"
+        slot: 19
+        queue-type: "unranked"
+
+  novatiers:
+    id: "Nova"
+    gamemodes:
+      ironuhc:
+        name: "Iron UHC"
+        material: IRON_CHESTPLATE
+        full-id: "Iron-UHC-Nova"
+        slot: 10
+        queue-type: "unranked"
+      diamondcart:
+        name: "Diamond Cart"
+        material: TNT_MINECART
+        full-id: "Diamond-Cart-Nova"
+        slot: 11
+        queue-type: "unranked"
+      pufferfish:
+        name: "PufferFish"
+        material: PUFFERFISH
+        full-id: "PufferFish-Nova"
+        slot: 12
+        queue-type: "unranked"
+      modernsmp:
+        name: "Modern SMP"
+        material: SHIELD
+        full-id: "Modern-SMP-Nova"
+        slot: 13
+        queue-type: "unranked"
+      axepotion:
+        name: "Axe Potion"
+        material: SPLASH_POTION
+        full-id: "Axe-Potion-Nova"
+        slot: 14
+        queue-type: "unranked"
+      shieldlesssmp:
+        name: "Shieldless SMP"
+        material: NETHERITE_SWORD
+        full-id: "Shieldless-SMP-Nova"
+        slot: 15
+        queue-type: "unranked"
+      diamondmace:
+        name: "Diamond Mace"
+        material: MACE
+        full-id: "Diamond-Mace-Nova"
+        slot: 16
+        queue-type: "unranked"
+
+  extiers:
+    id: "Ex"
+    gamemodes:
+      modernsmp:
+        name: "Modern SMP"
+        material: SHIELD
+        full-id: "Modern-SMP-Ex"
+        slot: 10
+        queue-type: "unranked"
+      diamondop:
+        name: "Diamond Op"
+        material: DIAMOND_CHESTPLATE
+        full-id: "Diamond-OP-Ex"
+        slot: 11
+        queue-type: "unranked"
+      nethsword:
+        name: "Neth Sword"
+        material: NETHERITE_SWORD
+        full-id: "Netherite-Sword-Ex"
+        slot: 12
+        queue-type: "unranked"
+      crossbow:
+        name: "CrossBow"
+        material: CROSSBOW
+        full-id: "CrossBow-Ex"
+        slot: 13
+        queue-type: "unranked"
+      ironpot:
+        name: "Iron Pot"
+        material: POTION
+        full-id: "Iron-Pot-Ex"
+        slot: 14
+        queue-type: "unranked"
+      sumo:
+        name: "Sumo"
+        material: LEAD
+        full-id: "Sumo-Ex"
+        slot: 15
+        queue-type: "unranked"
+      tnt:
+        name: "TnT"
+        material: TNT
+        full-id: "Tnt-Ex"
+        slot: 16
+        queue-type: "unranked"
+      ice:
+        name: "Ice"
+        material: PACKED_ICE
+        full-id: "Ice-Ex"
+        slot: 19
+        queue-type: "unranked"
+      htspleef:
+        name: "HT Spleef"
+        material: DIAMOND_SHOVEL
+        full-id: "HT-Spleef-Ex"
+        slot: 20
+        queue-type: "unranked"
+      ltspleef:
+        name: "LT Spleef"
+        material: DIAMOND_SHOVEL
+        full-id: "LT-Spleef-Ex"
+        slot: 21
+        queue-type: "unranked"
+
+  extragm:
+    id: "Extra"
+    gamemodes:
+      spearmace:
+        name: "Spear-Mace"
+        material: NETHERITE_SPEAR
+        full-id: "SpearMace-Extra"
+        slot: 10
+        queue-type: "ranked"

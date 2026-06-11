@@ -1,0 +1,24 @@
+name: main-neth
+type: hopper
+title: Netherite
+items:
+  '0':
+    material: NETHERITE_SWORD
+    amount: 1
+    name: '&#DD001B⚔&#E00921 &#E71C2EN&#EB2635e&#EE2F3Bt&#F23942h&#F54248e&#F94C4Fr&#FC5555i&#FC4C50t&#FD424Be &#FD2F41P&#FE263Do&#FE1C38t'
+    lore:
+    - §6▟§f▙ LMB
+    - '&#FF8600§l🏆 &#FF9326G&#FE9A38a&#FEA14Bm&#FEA75Ee&#FEAE71m&#FEB484o&#FEBB97d&#FDC2A9e &#FDCFCFO&#FDC9BCf &#FEBE97P&#FEB884v&#FEB371P&#FEAD5ET&#FEA84Bi&#FEA238e&#FF9C26r&#FF9713s'
+  '2':
+    material: NETHERITE_HELMET
+    amount: 1
+    name: '&#DD001B⚔&#E00921 &#E71C2EN&#EB2635e&#EE2F3Bt&#F23942h&#F54248e&#F94C4Fr&#FC5555i&#FC4C50t&#FD424Be &#FD2F41OP'
+    lore:
+    - §6▟§f▙ LMB
+    - '&#4AFA48§l🏆 &#6BF261G&#7BEE6Da&#8BEA79m&#9BE685e&#ACE392m&#BCDF9Eo&#CCDBAAd&#DCD7B6e &#FDCFCFO&#EDD4C4f &#CCDDAFM&#BBE1A4c&#ABE69AT&#9BEA8Fi&#8AEF84e&#7AF379r&#69F86Fs'
+  '4':
+    material: EXPERIENCE_BOTTLE
+    amount: 1
+    name: '&#A9FF00⚔ &#BFFF40N&#C9FF60e&#D4FF80t&#DFFF9Fh&#EAFFBFP&#F4FFDFo§ft &#FFFDBFN&#FFFC9Fo &#FFFB60M&#FFFA40e&#FFF920n&#FFF800d'
+    lore:
+    - §6▟§f▙ LMB

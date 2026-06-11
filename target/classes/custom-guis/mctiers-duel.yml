@@ -1,0 +1,113 @@
+name: mctiers-duel
+type: chest-3
+title: MCTiers
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '1':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '3':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '4':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '6':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '7':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '10':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '11':
+    material: DIAMOND_SWORD
+    amount: 1
+    name: 'Sword'
+    id: 'Sword-COM'
+  '12':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '13':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '14':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '15':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '16':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '17':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '18':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '19':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '20':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '21':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '22':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '23':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '24':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '25':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '26':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''

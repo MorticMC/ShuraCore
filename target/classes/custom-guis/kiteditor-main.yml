@@ -1,0 +1,198 @@
+name: kiteditor-main
+type: chest-5
+title: KitEditor
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '1':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '3':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '4':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '5':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '6':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '7':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '8':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '9':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '10':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '11':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '12':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '13':
+    material: NETHERITE_INGOT
+    amount: 1
+    name: '&#bd0303⛨ &#c50303M&#ce0202c&#d60202P&#de0202v&#e60101P
+      §8| &#f70000G&#ff0000a&#f40000m&#e90000e&#de0000m&#d40000o&#c90000d&#be0000e&#b30000s
+      &#a80000⛨'
+  '14':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '15':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '16':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '17':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '18':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '19':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '20':
+    material: POPPED_CHORUS_FRUIT
+    amount: 1
+    name: '&#00bdac⛨ &#13c4b5E&#26cabe&#3ad1c8T&#4dd7d1i&#60deda&#73e4e3r&#87ebeds
+      &#9af1f6| &#adf8ffG&#9aeff5a&#87e5ecm&#73dce2e&#60d2d8m&#4dc9cfo&#3abfc5d&#26b6bbe&#13acb2s
+      &#00a3a8⛨'
+  '21':
+    material: SHULKER_SHELL
+    amount: 1
+    name: '&#0269bd⛨ &#1377c4N&#2486cao&#3594d1v&#46a2d7a&#58b1deT&#69bfe5i&#7acde&#8bdbf2r&#9ceaf8s
+      &#adf8ff| &#9ce7f6G&#8ad7eea&#79c6e5m&#68b6dce&#57a5d4m&#4594cbo&#3484c2d&#2373b9e&#1163b1s
+      &#0052a8⛨'
+  '22':
+    material: CAMPFIRE
+    amount: 1
+    name: '&#03dd00⛨ &#31e32eM&#48e646c&#5fe95dT&#76ec74i&#8cf08be&#a3f3a2r&#baf6b9s
+      §8| &#e8ffeaG&#d1ffd6a&#b9ffc1m&#a2fface&#8bff98m&#74ff83o&#5dff6fd&#46ff5ae&#2eff45s
+      &#00ff1c⛨'
+  '23':
+    material: BREWING_STAND
+    amount: 1
+    name: '&#47bd24⛨ &#54c43fE&#61cc5b&#6dd376t&#7adb92r&#87e2ada
+      &#94e9c8| &#a0f1e4G&#adf8ffa&#9deee7m&#8ce4cee&#7cdab6m&#6cd09do&#5bc685d&#4bbc6ce&#3ab254s
+      &#2aa83b⛨'
+  '24':
+    material: SOUL_LANTERN
+    amount: 1
+    name: '&#00ddcb⛨ &#2be3d4S&#40e6d8u&#55e8dcb&#6aebe1T&#80eee5i&#95f1e9e&#aaf4eer&#bff7f2s
+      §8| &#e8fffdG&#d1ffba&#b9fff9m&#a2fff7e&#8bfff5m&#74fff4o&#5dfff2d&#46fff0e&#2effees
+      &#00ffea⛨'
+  '25':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '26':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '27':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '28':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '29':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '30':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '31':
+    material: SOUL_CAMPFIRE
+    amount: 1
+    name: '&#dd8600⛨ &#e39a2bP&#e6a440v&#e8ae55P&#ebb86aT&#eec380i&#f1cd95e&#f4d7aar&#f7e1bfs
+      §8| &#fff5e8G&#ffebda&#ffe1b9m&#ffd7a2e&#ffcd8bm&#ffc374o&#ffb95dd&#ffa46e&#ffa52es
+      &#ff9100⛨'
+  '32':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '33':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '34':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '35':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '36':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '37':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '38':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '39':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '40':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '41':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '42':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '43':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''
+  '44':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: ''

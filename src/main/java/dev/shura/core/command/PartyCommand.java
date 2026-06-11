@@ -134,7 +134,34 @@ public class PartyCommand implements CommandExecutor, TabCompleter {
                     player.sendMessage(Component.text("Only the party leader can duel.", NamedTextColor.RED));
                     return true;
                 }
-                plugin.getGuiEditorManager().openGui(player, "party-vs-party");
+                if (args.length >= 2) {
+                    Player target = Bukkit.getPlayer(args[1]);
+                    if (target == null) {
+                        plugin.getMessageService().send(player, "errors.player-not-found", Map.of("target", args[1]));
+                        return true;
+                    }
+                    plugin.getPartyDuelManager().sendChallenge(player, target,
+                            dev.shura.core.match.MatchFormat.FT3);
+                } else {
+                    plugin.getGuiEditorManager().openGui(player, "party-vs-party");
+                }
+            }
+
+            case "duelaccept" -> plugin.getPartyDuelManager().accept(player);
+
+            case "dueldeny" -> plugin.getPartyDuelManager().deny(player);
+
+            case "split" -> {
+                var party = plugin.getPartyManager().getParty(player.getUniqueId());
+                if (party == null) {
+                    player.sendMessage(Component.text("You are not in a party.", NamedTextColor.RED));
+                    return true;
+                }
+                if (!party.isLeader(player.getUniqueId())) {
+                    player.sendMessage(Component.text("Only the party leader can split the party.", NamedTextColor.RED));
+                    return true;
+                }
+                plugin.getGuiEditorManager().openGui(player, "party-split");
             }
 
             case "spectate" -> {
@@ -151,7 +178,7 @@ public class PartyCommand implements CommandExecutor, TabCompleter {
             }
 
             default -> player.sendMessage(Component.text(
-                    "Usage: /party <create|invite|kick|disband|leave|accept|transfer|match|spectate>",
+                    "Usage: /party <create|invite|kick|disband|leave|accept|transfer|match|split|duel|duelaccept|dueldeny|spectate>",
                     NamedTextColor.RED));
         }
         return true;
@@ -160,8 +187,8 @@ public class PartyCommand implements CommandExecutor, TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 1)
-            return filter(List.of("create", "invite", "kick", "disband", "leave", "accept", "transfer", "match", "duel", "spectate"), args[0]);
-        if (args.length == 2 && List.of("invite", "kick", "transfer").contains(args[0].toLowerCase()))
+            return filter(List.of("create", "invite", "kick", "disband", "leave", "accept", "transfer", "match", "split", "duel", "duelaccept", "dueldeny", "spectate"), args[0]);
+        if (args.length == 2 && List.of("invite", "kick", "transfer", "duel").contains(args[0].toLowerCase()))
             return Bukkit.getOnlinePlayers().stream()
                     .filter(p -> !p.equals(sender))
                     .map(Player::getName)

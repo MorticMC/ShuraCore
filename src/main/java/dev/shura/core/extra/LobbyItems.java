@@ -286,7 +286,18 @@ public class LobbyItems {
                 else player.sendMessage(MessageService.colorizeComponent("&cYou need &6Premium &cto access this queue."));
             }
             case "party", "party-manage" -> player.performCommand("party create");
-            case "party-match"    -> player.sendMessage(MessageService.colorizeComponent("&cParty match coming soon."));
+            case "party-match"    -> {
+                var party = plugin.getPartyManager().getParty(player.getUniqueId());
+                if (party == null) {
+                    player.sendMessage(MessageService.colorizeComponent("&cYou are not in a party."));
+                } else if (!party.isLeader(player.getUniqueId())) {
+                    player.sendMessage(MessageService.colorizeComponent("&cOnly the party leader can start a match."));
+                } else if (party.isInMatch()) {
+                    player.sendMessage(MessageService.colorizeComponent("&cYour party is already in a match."));
+                } else {
+                    plugin.getGuiEditorManager().openGui(player, "party-match");
+                }
+            }
             case "party-disband"  -> plugin.getPartyManager().disbandParty(player);
             case "party-spectate" -> {
                 // Check if party is in a match

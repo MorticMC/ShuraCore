@@ -1,61 +1,44 @@
 package dev.shura.core.arena;
 
 import dev.shura.core.ShuraCore;
-import dev.shura.core.util.BlockSnapshot;
-import org.bukkit.Location;
-import org.bukkit.World;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
+/**
+ * Arena regeneration backed by {@link SchematicService}.
+ * <p>
+ * Instead of storing a full {@code BlockData} snapshot for every live copy
+ * (which grew memory linearly with the number of clones), we keep a single
+ * cached clipboard per arena and simply re-paste it at the copy's origin to
+ * regen. The paste runs on FAWE's async pipeline.
+ */
 public class ArenaReset {
 
     private final ShuraCore plugin;
-    // copyId -> snapshot
-    private final Map<String, BlockSnapshot> snapshots = new ConcurrentHashMap<>();
+    private final SchematicService schematics;
 
-    public ArenaReset(ShuraCore plugin) {
+    public ArenaReset(ShuraCore plugin, SchematicService schematics) {
         this.plugin = plugin;
+        this.schematics = schematics;
     }
 
-    public void captureSnapshot(ArenaCopy copy, Arena arena) {
-        World world = org.bukkit.Bukkit.getWorld("shura_duels");
-        if (world == null) return;
-
-        // Offset the arena bounds to the copy's origin
-        Location origin = copy.getOrigin();
-        Location arenaPos1 = arena.getPos1();
-        Location arenaPos2 = arena.getPos2();
-
-        int offsetX = origin.getBlockX() - arenaPos1.getBlockX();
-        int offsetZ = origin.getBlockZ() - arenaPos1.getBlockZ();
-
-        Location copyPos1 = arenaPos1.clone().add(offsetX, 0, offsetZ);
-        Location copyPos2 = arenaPos2.clone().add(offsetX, 0, offsetZ);
-
-        BlockSnapshot snapshot = new BlockSnapshot(world, copyPos1, copyPos2);
-        snapshot.capture();
-        snapshots.put(copy.getCopyId(), snapshot);
+    /** Pre-warms the clipboard cache for an arena so the first match doesn't pay the capture cost. */
+    public void warm(Arena arena) {
+        schematics.getOrCapture(arena);
     }
 
     public void reset(ArenaCopy copy, Runnable onComplete) {
-        BlockSnapshot snapshot = snapshots.get(copy.getCopyId());
-        if (snapshot == null || !snapshot.isCaptured()) {
+        Arena arena = plugin.getArenaManager().getArena(copy.getArenaId());
+        if (arena == null) {
             copy.release();
             if (onComplete != null) onComplete.run();
             return;
         }
-        snapshot.restore(() -> {
+        schematics.pasteAsync(arena, copy.getOrigin(), () -> {
             copy.release();
             if (onComplete != null) onComplete.run();
-        }, plugin);
+        });
     }
 
-    public void removeSnapshot(String copyId) {
-        snapshots.remove(copyId);
-    }
-
-    public boolean hasSnapshot(String copyId) {
-        return snapshots.containsKey(copyId);
+    public void invalidate(String arenaId) {
+        schematics.invalidate(arenaId);
     }
 }

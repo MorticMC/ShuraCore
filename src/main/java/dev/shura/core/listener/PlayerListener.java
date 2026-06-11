@@ -56,6 +56,9 @@ public class PlayerListener implements Listener {
         if (plugin.getMatchManager().isInMatch(uuid)) {
             var match = plugin.getMatchManager().getMatchByPlayer(uuid);
             if (match != null) match.handleLeave(player);
+        } else if (plugin.getTeamMatchManager().isInMatch(uuid)) {
+            var teamMatch = plugin.getTeamMatchManager().getMatchByPlayer(uuid);
+            if (teamMatch != null) teamMatch.handleLeave(player);
         }
 
         // Leave queue
@@ -90,19 +93,31 @@ public class PlayerListener implements Listener {
         Player player = event.getPlayer();
         backLocations.put(player.getUniqueId(), player.getLocation().clone());
 
-        // Handle match death
+        // Handle match death (1v1)
         if (plugin.getMatchManager().isInMatch(player.getUniqueId())) {
             event.setDeathMessage(null);
             event.getDrops().clear();
             event.setDroppedExp(0);
             event.setCancelled(true);
-            
+
             // Fake death - set health to max and handle via match
             player.setHealth(player.getMaxHealth());
-            
+
             var match = plugin.getMatchManager().getMatchByPlayer(player.getUniqueId());
             if (match != null) {
                 match.handleDeath(player);
+            }
+        } else if (plugin.getTeamMatchManager().isInMatch(player.getUniqueId())) {
+            // Handle match death (team)
+            event.setDeathMessage(null);
+            event.getDrops().clear();
+            event.setDroppedExp(0);
+            event.setCancelled(true);
+            player.setHealth(player.getMaxHealth());
+
+            var teamMatch = plugin.getTeamMatchManager().getMatchByPlayer(player.getUniqueId());
+            if (teamMatch != null) {
+                teamMatch.handleDeath(player);
             }
         }
     }
@@ -110,7 +125,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onGodDamage(org.bukkit.event.entity.EntityDamageEvent event) {
         if (!(event.getEntity() instanceof Player player)) return;
-        if (plugin.getMatchManager().isInMatch(player.getUniqueId())) return;
+        if (plugin.isInAnyMatch(player.getUniqueId())) return;
         var profile = plugin.getProfileManager().getProfile(player);
         if (profile != null && profile.isGodMode()) event.setCancelled(true);
     }
@@ -118,7 +133,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onRespawn(PlayerRespawnEvent event) {
         Player player = event.getPlayer();
-        if (plugin.getMatchManager().isInMatch(player.getUniqueId())) return;
+        if (plugin.isInAnyMatch(player.getUniqueId())) return;
 
         // Respawn at lobby spawn
         String spawnStr = plugin.getConfig().getString("lobby.spawn", "0,64,0,0,0");
@@ -134,7 +149,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onInteract(PlayerInteractEvent event) {
         Player player = event.getPlayer();
-        if (plugin.getMatchManager().isInMatch(player.getUniqueId())) return;
+        if (plugin.isInAnyMatch(player.getUniqueId())) return;
         if (plugin.getSpectatorManager().isSpectating(player.getUniqueId())) return;
 
         Action action = event.getAction();
@@ -150,7 +165,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onWorldChange(PlayerChangedWorldEvent event) {
         Player player = event.getPlayer();
-        if (plugin.getMatchManager().isInMatch(player.getUniqueId())) return;
+        if (plugin.isInAnyMatch(player.getUniqueId())) return;
         if (plugin.getSpectatorManager().isSpectating(player.getUniqueId())) return;
         String lobbyWorld = plugin.getConfig().getString("lobby.world", "world");
         if (player.getWorld().getName().equals(lobbyWorld)) {
@@ -161,7 +176,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onTeleport(PlayerTeleportEvent event) {
         Player player = event.getPlayer();
-        if (plugin.getMatchManager().isInMatch(player.getUniqueId())) return;
+        if (plugin.isInAnyMatch(player.getUniqueId())) return;
         if (plugin.getSpectatorManager().isSpectating(player.getUniqueId())) return;
         // Save back location on teleport
         backLocations.put(player.getUniqueId(), event.getFrom().clone());
